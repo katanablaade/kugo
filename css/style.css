@@ -6,3 +6,41 @@
   margin: auto;
   padding: 0;
 }
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+.header-link {
+  display: flex;
+  gap: 1.875rem;
+}
+.header-link-item {
+  color: rgb(93, 108, 123);
+  font-family: "Jost";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  text-decoration: none;
+}
+.header-icon {
+  display: flex;
+  text-decoration: none;
+  gap: 0.5313rem;
+  height: 12px;
+}
+.header-phone {
+  color: rgb(40, 39, 57);
+  font-family: "Jost";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  text-decoration: none;
+}
+.hr {
+  border: none;
+  color: rgb(236, 243, 255);
+  background-color: rgb(236, 243, 255);
+  height: 1px;
+}
