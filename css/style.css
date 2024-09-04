@@ -146,6 +146,9 @@ form {
   font-weight: 400;
   line-height: 20px;
 }
+.header {
+  margin-bottom: 72px;
+}
 .header-content {
   background-image: url("../img/header-image.jpeg");
   background-size: cover;
@@ -249,4 +252,50 @@ form {
   border-radius: 5px;
   background: rgb(255, 255, 255);
   margin-bottom: 56px;
+}
+.test-drive {
+  margin-bottom: 100px;
+}
+.test-drive-wrapper {
+  display: flex;
+}
+.test-drive-title {
+  color: rgb(40, 39, 57);
+  font-family: "Jost";
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 51px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 28px;
+  padding-right: 130px;
+  margin-bottom: 40px;
+}
+.test-drive-text {
+  color: rgb(40, 39, 57);
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.test-drive-list {
+  color: rgb(40, 39, 57);
+  font-family: "Jost";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.test-drive-list-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.test-drive-content {
+  padding-left: 125px;
 }
