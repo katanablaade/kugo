@@ -665,6 +665,7 @@
   border-radius: 5px;
   padding: 0;
   margin-right: 10px;
+  cursor: pointer;
 }
 .social {
   display: grid;
