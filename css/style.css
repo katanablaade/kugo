@@ -80,8 +80,6 @@
   display: flex;
   padding: 8px 18px 9px 15px;
   gap: 13px;
-}
-.button-text {
   color: rgb(255, 255, 255);
   font-family: "Jost";
   font-size: 16px;
