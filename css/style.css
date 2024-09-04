@@ -54,6 +54,7 @@
   color: rgb(236, 243, 255);
   background-color: rgb(236, 243, 255);
   height: 1px;
+  margin-bottom: 30px;
 }
 .nav-bottom {
   display: flex;
