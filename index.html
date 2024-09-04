@@ -9,6 +9,12 @@
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Kugo WD</title>
@@ -52,7 +58,46 @@
         </div>
       </div>
       <hr class="hr" />
+      <!-- header-top -->
+      <div class="container">
+        <div class="header-bottom">
+          <a href="./" class="logo">KUGOO</a>
+          <button class="button button-menu">
+            <div class="button-content">
+              <img src="img/svg/menu.svg" alt="menu" class="menu" />
+              <span class="button-text">Каталог</span>
+            </div>
+          </button>
+          <div class="search">
+            <form>
+              <input type="text" placeholder="Искать самокат KUGO" />
+              <button class="button" type="submit">
+                <img
+                  src="img/svg/search.svg"
+                  alt="search"
+                  class="search-icon"
+                />
+              </button>
+            </form>
+          </div>
+          <div class="header-bottom-icon">
+            <a href="#" class="header-bottom-icon-items">
+              <img src="img/svg/balance.svg" alt="balance" />
+            </a>
+            <a href="#" class="header-bottom-icon-items">
+              <img src="img/svg/heart.svg" alt="heart" />
+            </a>
+            <a href="#" class="header-bottom-icon-items">
+              <div class="shopping-cart">
+                <img src="img/svg/shopping-cart.svg" alt="shopping-cart" />
+                <span class="shopping-cart-text">Корзина</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </header>
+    <!-- header -->
     <script src="js/main.js"></script>
   </body>
 </html>
