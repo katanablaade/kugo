@@ -1,0 +1,8 @@
+.body {
+  font-family: "Jost", sans-serif;
+}
+.container {
+  max-width: 98.375rem;
+  margin: auto;
+  padding: 0;
+}
