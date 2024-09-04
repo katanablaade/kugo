@@ -299,3 +299,118 @@ form {
 .test-drive-content {
   padding-left: 125px;
 }
+.swiper-wrapper {
+  display: flex;
+  padding: 0;
+}
+.swiper-slide {
+  border: 1.5px solid rgb(234, 235, 237);
+  border-radius: 10px;
+  position: relative;
+}
+.hit {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.balance {
+  position: absolute;
+  right: 17px;
+  top: 18px;
+}
+.slider-text {
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-right: 22px;
+}
+.models-title {
+  color: rgb(40, 39, 57);
+  font-family: "Jost";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+.parametrs-list {
+  padding: 0;
+  list-style: none;
+  columns: 2;
+  margin-bottom: 25px;
+}
+.parametrs-list-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+  color: rgb(93, 108, 123);
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.sale {
+  text-decoration: line-through;
+  color: rgb(93, 108, 123);
+  font-family: "Jost";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+}
+.price {
+  margin: 0;
+  margin-bottom: 21px;
+  color: rgb(40, 39, 57);
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 29px;
+}
+.circle-1 {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1.3px solid rgb(234, 235, 237);
+  position: absolute;
+  right: 75px;
+  bottom: 76px;
+}
+.circle-2 {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1.3px solid rgb(234, 235, 237);
+  position: absolute;
+  right: 25px;
+  bottom: 76px;
+}
+.buy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.buy-icon {
+  display: flex;
+}
+.button-models {
+  color: rgb(255, 255, 255);
+  font-family: "Jost";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  padding: 9px 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  background: rgb(111, 115, 238);
+}
+.shopping-cart-2,
+.heart-2 {
+  position: absolute;
+  top: 10px;
+  left: 9px;
+  right: 11px;
+  bottom: 9px;
+}
+.models-image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
