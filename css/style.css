@@ -560,7 +560,7 @@
 }
 .footer-top {
   display: flex;
-  margin-top: 46px;
+  padding-top: 46px;
 }
 .footer-contacts-wrapper {
   display: flex;
@@ -635,4 +635,59 @@
   font-weight: 400;
   line-height: 17px;
   text-decoration: none;
+}
+.footer {
+  background: rgb(244, 247, 251);
+}
+.footer-midle {
+  display: flex;
+  margin-top: 36px;
+}
+.badge-wrapper {
+  margin-left: 59px;
+  margin-right: 178px;
+}
+.badge {
+  margin-right: 10px;
+}
+.button-social {
+  background: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  padding: 0;
+  margin-right: 10px;
+}
+.social {
+  display: grid;
+  grid-template-columns: 45px 78px;
+  grid-template-rows: auto 20px;
+  justify-content: end;
+  grid-template-areas:
+    "img name"
+    "img users";
+}
+.social-name {
+  grid-area: name;
+  color: rgb(40, 39, 57);
+  font-family: "Jost";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-top: 5px;
+  padding-right: 40px;
+}
+.social-users {
+  grid-area: users;
+  color: rgb(93, 108, 123);
+  font-family: "Jost";
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+  padding-right: 49px;
+}
+.social-image {
+  grid-area: img;
+  padding-top: 13px;
+  padding-left: 12px;
+  padding-bottom: 12px;
 }
