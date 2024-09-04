@@ -91,7 +91,7 @@
 .button-menu {
   margin-right: 20px;
 }
-form {
+.search-form {
   position: relative;
   width: 603px;
   margin: 0 auto;
@@ -259,6 +259,18 @@ form {
 .test-drive-wrapper {
   display: flex;
 }
+.title {
+  color: rgb(40, 39, 57);
+  font-family: "Jost";
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 51px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 28px;
+  padding-right: 130px;
+  margin-bottom: 40px;
+}
 .test-drive-title {
   color: rgb(40, 39, 57);
   font-family: "Jost";
@@ -413,4 +425,136 @@ form {
 .models-image {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+.models {
+  margin-bottom: 100px;
+}
+.request-form-wrapper {
+  background: rgb(244, 247, 251);
+  border-radius: 10px;
+}
+.request-form-wrapper {
+  position: relative;
+}
+.form-photo {
+  position: absolute;
+  bottom: 0;
+  right: 180px;
+}
+.request-form {
+  padding-top: 88px;
+  padding-left: 135px;
+}
+.request-form-title {
+  margin: 0;
+  padding: 0;
+  padding-right: 632px;
+  margin-bottom: 40px;
+}
+.request-form-text {
+  color: rgb(40, 39, 57);
+  font-family: "Jost";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  margin: 0;
+  margin-bottom: 21px;
+}
+.input-group-wrapper {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.checkbox-wrapper {
+  padding-bottom: 78px;
+  display: flex;
+}
+.input {
+  border: 1px solid rgb(234, 235, 237);
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  padding: 15px 52px 15px 25px;
+  color: rgb(93, 108, 123);
+  font-family: "Jost";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 2px;
+  width: 263px;
+  margin-right: 20px;
+}
+.input:focus {
+  border: 1px solid rgb(93, 108, 123);
+  outline: 0;
+}
+.button-request {
+  padding: 15px 25px;
+  color: rgb(255, 255, 255);
+  font-family: "Jost";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+}
+.checkbox {
+  margin-right: 12px;
+}
+.checkbox-pointer {
+  background: rgb(255, 255, 255);
+  border-radius: 2px;
+  width: 16px;
+  height: 16px;
+}
+.checkbox-text {
+  margin: 0;
+  color: rgb(40, 39, 57);
+  font-family: "Jost";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  padding-right: 892px;
+}
+.request {
+  margin-bottom: 100px;
+}
+.form-footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(111, 115, 238);
+}
+.form-footer-text {
+  color: rgb(255, 255, 255);
+  font-family: "Jost";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  margin: 0;
+  margin-left: 165px;
+  margin-right: 90px;
+  text-transform: uppercase;
+}
+.button-form-footer {
+  background: rgb(255, 255, 255);
+  padding: 15px 25px;
+  color: rgb(111, 115, 238);
+  font-family: "Jost";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+}
+.footer-input {
+  background: rgba(255, 255, 255, 0.2);
+  width: 410px;
+  border: none;
+}
+.footer-input::placeholder {
+  color: rgb(255, 255, 255);
+  font-family: "Jost";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+}
+.footer-input-group {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right: 165px;
 }

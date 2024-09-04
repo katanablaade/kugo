@@ -70,7 +70,7 @@
             </div>
           </button>
           <div class="search">
-            <form>
+            <form class="search-form">
               <input type="text" placeholder="Искать самокат KUGO" />
               <button class="button" type="submit">
                 <img
@@ -151,7 +151,7 @@
       <div class="container-large">
         <div class="test-drive-wrapper">
           <div class="test-drive-content">
-            <h2 class="test-drive-title">
+            <h2 class="title test-drive-title">
               Определите максимально подходящую вам модель не теоретически, а на
               практике
             </h2>
@@ -216,7 +216,7 @@
             alt="test-drive"
           />
           <div class="test-drive-content">
-            <h2 class="test-drive-title">
+            <h2 class="title test-drive-title">
               Научим правильной и безопасной езде в городе вас или вашего
               ребенка
             </h2>
@@ -517,6 +517,56 @@
         </div>
       </div>
     </section>
+    <section class="request">
+      <div class="container-large">
+        <div class="request-form-wrapper">
+          <img src="img/form-photo.png" alt="form-photo" class="form-photo" />
+          <form action="#" class="request-form">
+            <h2 class="title request-form-title">Нет нужной модели, которую хотите протестировать?</h2>
+            <p class="request-form-text">
+              Оставьте заявку, и менеджер подберет нужный самокат
+            </p>
+            <div class="input-group-wrapper">
+              <div class="input-group">
+                <input
+                  id="user-phone"
+                  type="tel"
+                  class="input phone-mask"
+                  placeholder="+7 (___) __ - __ - __"
+                />
+                <button type="submit" class="button button-request">Оставить заявку на тест-драйв</button>
+              </div>
+            </div>
+            <div class="checkbox-wrapper">
+                <label class="checkbox">
+                  <input class="checkbox-pointer" type="checkbox">
+                </label>
+                <p class="checkbox-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="policy">политикой конфиденциальности</a></p>
+              </div>
+          </form>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section class="form-footer">
+      <div class="form-footer-wrapper">
+      <h2 class="form-footer-text">Оставьте свою почту и станьте первым, кто получит скидку на новые самокаты</h2>
+      <form action="#" class="footer-form">
+        <div class="input-group-wrapper">
+          <div class="footer-input-group">
+            <input
+              id="user-phone"
+              type="email"
+              class="input footer-input"
+              placeholder="Введите Ваш email"
+            />
+            <button type="submit" class="button button-form-footer">Подписаться</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    </section>
+    <footer class="footer"></footer>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
