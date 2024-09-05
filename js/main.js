@@ -1,7 +1,7 @@
 const swiper = new Swiper(".models-swiper", {
   speed: 400,
-  width: 1090,
-  spaceBetween: 21,
+  width: 1110,
+  spaceBetween: 29,
   slidesPerView: 4,
   loop: true,
   navigation: {

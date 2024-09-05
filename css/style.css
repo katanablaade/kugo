@@ -20,7 +20,7 @@
 .nav-top {
   display: flex;
   justify-content: space-between;
-  margin-top: 11px;
+  margin-top: 12px;
   margin-bottom: 11px;
 }
 .nav-link {
@@ -39,7 +39,6 @@
   display: flex;
   text-decoration: none;
   gap: 0.5313rem;
-  height: 12px;
 }
 .nav-phone {
   color: rgb(40, 39, 57);
@@ -54,7 +53,7 @@
   color: rgb(236, 243, 255);
   background-color: rgb(236, 243, 255);
   height: 1px;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 .nav-bottom {
   display: flex;
@@ -66,7 +65,7 @@
   font-weight: 700;
   line-height: 43px;
   text-decoration: none;
-  margin-right: 38px;
+  margin-right: 35px;
 }
 .button {
   border: 1.5px solid rgb(111, 115, 238);
@@ -87,7 +86,7 @@
   line-height: 23px;
 }
 .button-menu {
-  margin-right: 20px;
+  margin-right: 21px;
 }
 .search-form {
   position: relative;
@@ -107,10 +106,11 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+  margin-top: 2px;
 }
 .search button {
   position: absolute;
-  top: 0;
+  top: 2px;
   right: 0px;
   width: 40px;
   height: 40px;
@@ -150,15 +150,12 @@
 }
 .header-content {
   background-image: url("../img/header-image.jpeg");
-  background-size: cover;
-  position: relative;
-  border-radius: 10px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom -28px right;
   position: relative;
   z-index: 0;
-  padding-top: 56px;
-  padding-left: 158px;
+  padding-top: 54px;
+  padding-left: 136px;
   border-radius: 10px;
 }
 .header-content::before {
@@ -189,7 +186,7 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 17px;
-  margin-right: 10px;
+  margin-right: 23px;
 }
 .time {
   color: rgb(255, 255, 255);
@@ -216,18 +213,18 @@
   font-weight: 400;
   line-height: 29px;
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 29px;
 }
 .header-feautures {
   display: flex;
   gap: 35px;
-  margin-bottom: 38px;
+  margin-bottom: 37px;
 }
 .header-feautures-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 17px;
   width: 204px;
 }
 .header-feautures-text {
@@ -270,7 +267,7 @@
   padding-right: 130px;
   margin-bottom: 40px;
 }
-.test-drive-title {
+.test-drive-title-top {
   color: rgb(40, 39, 57);
   font-family: "Jost";
   font-size: 35px;
@@ -280,7 +277,19 @@
   margin: 0;
   margin-top: 28px;
   padding-right: 130px;
-  margin-bottom: 40px;
+  margin-bottom: 26px;
+}
+.test-drive-title-bottom {
+  color: rgb(40, 39, 57);
+  font-family: "Jost";
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 51px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 28px;
+  padding-right: 130px;
+  margin-bottom: 26px;
 }
 .test-drive-text {
   color: rgb(40, 39, 57);
@@ -307,8 +316,11 @@
   align-items: center;
   margin-bottom: 10px;
 }
-.test-drive-content {
-  padding-left: 125px;
+.test-drive-content-top {
+  padding-left: 136px;
+}
+.test-drive-content-bottom {
+  padding-left: 95px;
 }
 .swiper-wrapper {
   display: flex;
@@ -331,8 +343,8 @@
 }
 .slider-text {
   padding-left: 24px;
-  padding-top: 20px;
-  padding-right: 22px;
+  padding-top: 16px;
+  padding-right: 11px;
 }
 .models-title {
   color: rgb(40, 39, 57);
@@ -341,13 +353,26 @@
   font-weight: 600;
   line-height: 26px;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 21px;
+}
+.models-title-glob {
+  color: rgb(40, 39, 57);
+  font-family: "Jost";
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 51px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-left: 132px;
+  margin-right: 135px;
+  margin-bottom: 32px;
 }
 .parametrs-list {
   padding: 0;
   list-style: none;
   columns: 2;
-  margin-bottom: 25px;
+  margin-bottom: 6px;
 }
 .parametrs-list-item {
   display: flex;
@@ -369,7 +394,7 @@
 }
 .price {
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 15px;
   color: rgb(40, 39, 57);
   font-family: "Jost";
   font-size: 20px;
@@ -382,7 +407,7 @@
   border-radius: 50%;
   border: 1.3px solid rgb(234, 235, 237);
   position: absolute;
-  right: 75px;
+  right: 74px;
   bottom: 76px;
 }
 .circle-2 {
@@ -410,7 +435,7 @@
   line-height: 17px;
   padding: 9px 20px;
   margin-bottom: 20px;
-  width: 100%;
+  width: 206px;
   background: rgb(111, 115, 238);
 }
 .shopping-cart-2,
@@ -426,7 +451,7 @@
   border-top-right-radius: 10px;
 }
 .models {
-  margin-bottom: 100px;
+  margin-bottom: 83px;
 }
 .request-form-wrapper {
   background: rgb(244, 247, 251);
@@ -437,7 +462,7 @@
 }
 .form-photo {
   position: absolute;
-  bottom: 0;
+  bottom: 1px;
   right: 180px;
 }
 .request-form {
@@ -448,20 +473,20 @@
   margin: 0;
   padding: 0;
   padding-right: 632px;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 .request-form-text {
   color: rgb(40, 39, 57);
   font-family: "Jost";
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 23px;
   margin: 0;
   margin-bottom: 21px;
 }
 .input-group-wrapper {
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 22px;
 }
 .checkbox-wrapper {
   padding-bottom: 78px;
@@ -479,7 +504,20 @@
   line-height: 23px;
   letter-spacing: 2px;
   width: 263px;
-  margin-right: 20px;
+  margin-right: 17px;
+}
+.input-mail {
+  border: 1px solid rgb(234, 235, 237);
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  padding: 15px 52px 15px 25px;
+  color: rgb(93, 108, 123);
+  font-family: "Jost";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  width: 263px;
+  margin-right: 17px;
 }
 .input:focus {
   border: 1px solid rgb(93, 108, 123);
@@ -519,7 +557,7 @@
   line-height: 14px;
 }
 .request {
-  margin-bottom: 100px;
+  margin-bottom: 98px;
 }
 .form-footer-wrapper {
   display: flex;
@@ -535,7 +573,7 @@
   line-height: 26px;
   margin: 0;
   margin-left: 165px;
-  margin-right: 90px;
+  margin-right: 94px;
   text-transform: uppercase;
 }
 .button-form-footer {
@@ -571,7 +609,8 @@
 }
 .footer-top {
   display: flex;
-  padding-top: 46px;
+  padding-top: 44px;
+  margin-bottom: 47px;
 }
 .footer-contacts-wrapper {
   display: flex;
@@ -601,14 +640,14 @@
   text-decoration: none;
 }
 .footer-catalog-wrapper {
-  margin-right: 105px;
+  margin-right: 125px;
 }
 .footer-buyer {
   padding: 0;
-  columns: 2 156px;
+  columns: 2 140px;
 }
 .footer-buyer-wrapper {
-  margin-right: 52px;
+  margin-right: 69px;
 }
 .call-center {
   color: rgb(40, 39, 57);
@@ -626,6 +665,7 @@
   font-weight: 500;
   line-height: 23px;
   text-decoration: none;
+  margin-bottom: 10px;
 }
 .footer-time {
   color: rgb(93, 108, 123);
@@ -633,11 +673,13 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 17px;
+  margin: 0;
+  margin-top: 7px;
 }
 .footer-service-center-wrapper {
   margin-top: 45px;
-  margin-left: 28px;
-  margin-right: 62px;
+  margin-left: 40px;
+  margin-right: 76px;
 }
 .call {
   color: rgb(111, 115, 238);
@@ -646,6 +688,7 @@
   font-weight: 400;
   line-height: 17px;
   text-decoration: none;
+  margin-top: 6px;
 }
 .footer {
   background: rgb(244, 247, 251);
@@ -653,14 +696,14 @@
 .footer-midle {
   display: flex;
   margin-top: 36px;
-  margin-bottom: 34px;
+  margin-bottom: 29px;
 }
 .badge-wrapper {
-  margin-left: 59px;
-  margin-right: 178px;
+  margin-left: 24px;
+  margin-right: 244px;
 }
 .badge {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 .button-social {
   background: rgb(255, 255, 255);
@@ -672,7 +715,7 @@
 }
 .social {
   display: grid;
-  grid-template-columns: 45px 78px;
+  grid-template-columns: 45px 72px;
   grid-template-rows: auto 20px;
   justify-content: end;
   grid-template-areas:
@@ -696,7 +739,7 @@
   font-size: 10px;
   font-weight: 400;
   line-height: 14px;
-  padding-right: 49px;
+  padding-right: 44px;
 }
 .social-image {
   grid-area: img;
@@ -705,14 +748,15 @@
   padding-bottom: 12px;
 }
 .hr-footer {
-  margin-bottom: 19px;
+  margin-bottom: 13px;
 }
 .footer-bottom {
   display: flex;
 }
 .footer-bottom-info {
   display: flex;
-  margin-right: 325px;
+  margin-right: 338px;
+  margin-top: 6px;
 }
 .online-chat {
   display: flex;
@@ -729,7 +773,8 @@
   margin-right: 44px;
 }
 .footer-bottom-card {
-  margin-right: 37px;
+  margin-right: 36px;
+  margin-top: 3px;
 }
 .ohline-chat-text {
   margin: 0;
@@ -738,10 +783,10 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  margin-right: 15px;
+  margin-right: 16px;
 }
 .online-chat-item {
-  margin-right: 14px;
+  margin-right: 10px;
 }
 .online-chat-item:last-child {
   margin-right: 0;
