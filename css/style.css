@@ -846,9 +846,20 @@
     margin-left: 2.8125rem;
   }
   .header-title {
+    color: rgb(40, 39, 57);
     padding-right: 23.625rem;
     background-position: bottom right -86px;
   }
+  .header-content-adress-image {
+    filter: brightness(0.2);
+  }
+  .address,
+  .time,
+  .header-text,
+  .header-feautures-text {
+    color: rgb(40, 39, 57);
+  }
+
   .test-drive-content-top {
     padding-left: 1.5rem;
   }
@@ -1145,5 +1156,12 @@
   .footer-bottom-info {
     justify-content: center;
     align-items: center;
+  }
+  .header-content-adress {
+    flex-direction: column;
+    gap: 3px;
+  }
+  .header-content-adress-image {
+    display: none;
   }
 }
