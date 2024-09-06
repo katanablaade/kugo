@@ -77,6 +77,16 @@
   margin-right: 2.1875rem;
   display: none;
 }
+.logo-center-nav {
+  color: rgb(40, 39, 57);
+  font-family: "Jost";
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 2.6875rem;
+  text-decoration: none;
+  margin-right: 2.1875rem;
+  display: none;
+}
 .button {
   border: 1.5px solid rgb(111, 115, 238);
   border-radius: 0.3125rem;
@@ -1001,6 +1011,10 @@
     display: block;
     margin-right: 2.1875rem;
   }
+  .logo-center-nav {
+    display: block;
+    margin-right: 2.1875rem;
+  }
   .logo {
     display: none;
   }
@@ -1062,6 +1076,9 @@
   }
   .logo-center {
     margin-right: 7.1875rem;
+  }
+  .logo-center-nav {
+    margin-right: 0;
   }
   .header-title {
     font-size: 1.5rem;
