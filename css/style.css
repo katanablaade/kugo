@@ -1008,6 +1008,9 @@
   .social-wrapper {
     display: none;
   }
+  .test-drive {
+    margin-bottom: 0.5rem;
+  }
 }
 @media (max-width: 768px) {
   .search-form {
@@ -1163,5 +1166,8 @@
   }
   .header-content-adress-image {
     display: none;
+  }
+  .request {
+    margin-bottom: 0;
   }
 }
