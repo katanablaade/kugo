@@ -908,6 +908,9 @@
   .footer-bottom-link {
     margin-right: 0.75rem;
   }
+  .footer-midle {
+    margin-right: 0.625rem;
+  }
 }
 @media (max-width: 992px) {
   .search-form {
@@ -981,13 +984,12 @@
     margin-right: 4.75rem;
   }
   .footer-top {
-    margin-left: 3.625rem;
+    margin-left: 0.625rem;
   }
   .footer-catalog-item {
     margin-left: 10px;
   }
   .footer-midle {
-    flex-direction: column;
     margin-left: 3.625rem;
     justify-content: center;
     align-items: center;
@@ -1047,6 +1049,7 @@
   .footer-logo-center {
     display: block;
     margin-right: 2.1875rem;
+    margin-left: 1.875rem;
   }
   .footer-bottom-card {
     display: none;
@@ -1124,7 +1127,8 @@
   }
   .footer-logo-center {
     display: block;
-    margin-right: 4.1875rem;
+    margin-right: 2.1875rem;
+    margin-left: 1.875rem;
   }
   .badge-wrapper {
     display: flex;
