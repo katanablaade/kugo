@@ -103,7 +103,6 @@ document.addEventListener("input", (e) => {
 
 let currentModal; // текущее модальное окно
 let modalDialog; // белое диалоговое окно
-let alertModal = document.querySelector("#alert-modal"); // окно с предупреждением или благодарностью
 
 const modalButtons = document.querySelectorAll("[data-toggle=modal]"); // переключатели модальных окон
 modalButtons.forEach((button) => {
@@ -135,7 +134,7 @@ document.addEventListener("keyup", (event) => {
   }
 });
 
-const forms = document.querySelectorAll("form"); // Собираем формы
+const forms = document.querySelectorAll("#form"); // Собираем формы
 forms.forEach((form) => {
   const validation = new JustValidate(form, {
     errorFieldCssClass: "is-invalid",
@@ -156,36 +155,18 @@ forms.forEach((form) => {
           body: formData,
         })
           .then((response) => {
-            if (response.ok) {
+            if (response.ok && form.chk.checked) {
               thisForm.reset();
               if (currentModal) {
                 currentModal.classList.remove("is-open");
               }
-              alertModal.classList.add("is-open");
-              currentModal = alertModal;
-              modalDialog = currentModal.querySelector(".modal-dialog");
-              /* отслеживаем клик по окну и пустым областям */
-              currentModal.addEventListener("mousedown", (event) => {
-                /* если клик в пустую область (не диалог) */
-                if (!event.composedPath().includes(modalDialog)) {
-                  /* закрываем окно */
-                }
-                const modalCloseButton = document.querySelectorAll(
-                  "[data-toggle=modal-close]"
-                );
-                modalCloseButton.forEach((button) => {
-                  button.addEventListener("click", (event) => {
-                    event.preventDefault();
-                    currentModal.classList.remove("is-open");
-                  });
-                });
-              });
             } else {
-              alert("Ошибка: " + response.status);
+              alert("Ошибка: Необходимо согласиться с правилами проекта");
+              return;
             }
           })
-          .catch((error) => {
-            alert(error);
+          .catch(() => {
+            alert("Ошибка: Необходимо согласиться с правилами проекта");
           });
       };
       ajaxSend(formData);

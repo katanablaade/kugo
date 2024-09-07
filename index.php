@@ -522,7 +522,7 @@
       <div class="container-large">
         <div class="request-form-wrapper">
           <img src="img/form-photo.png" alt="form-photo" class="form-photo" />
-          <form action="#" class="request-form">
+          <form action="handler.php" method="POST" class="request-form" id="form">
             <h2 class="title request-form-title">Нет нужной модели, которую хотите протестировать?</h2>
             <p class="request-form-text">
               Оставьте заявку, и менеджер подберет нужный самокат
@@ -530,6 +530,7 @@
             <div class="input-group-wrapper">
               <div class="input-group">
                 <input
+                 name="userphone"
                   id="user-phone"
                   type="tel"
                   class="input phone-mask"
@@ -539,8 +540,8 @@
               </div>
             </div>
             <div class="checkbox-wrapper">
-                <label class="checkbox">
-                  <input class="checkbox-pointer" type="checkbox">
+                <label class="checkbox" for="chk">
+                  <input class="checkbox-pointer" type="checkbox" id="chk">
                 </label>
                 <p class="checkbox-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="policy">политикой конфиденциальности</a></p>
               </div>
@@ -680,7 +681,7 @@
           Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.
         </p>
         <p class="modal-text-bottom">Как с вами удобнее связаться?</p>
-        <form action="handler.php" method="POST" class="modal-form">
+        <form action="handler.php" method="POST" class="modal-form" id="form">
           <div class="input-group-wrapper input-group-vertical">
             <div class="input-group modal-input-group">
               <input
@@ -699,8 +700,8 @@
               Оформить предзаказ
             </button>
             <div class="notify modal-notify">
-                <label class="modal-checkbox">
-                  <input class="checkbox-pointer" type="checkbox">
+                <label class="modal-checkbox" for="chk">
+                  <input class="checkbox-pointer" type="checkbox" id="chk">
                 </label>
                 <p class="modal-checkbox-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="modal-policy">политикой конфиденциальности</a></p>
           </div>
@@ -712,6 +713,7 @@
       </div>
     </div>
     </div>
+    <script src="js/just-validate.production.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
