@@ -10,15 +10,15 @@ const swiper = new Swiper(".models-swiper", {
   breakpoints: {
     // when window width is >= 320px
     576: {
-      slidesPerView: 0,
+      slidesPerView: 1,
     },
     // when window width is >= 480px
     769: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
     // when window width is >= 992px
     992: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     // when window width is >= 1200px
     1000: {
@@ -146,6 +146,12 @@ forms.forEach((form) => {
         errorMessage: "Укажите телефон",
       },
     ])
+    .addField("[name=agree]", [
+      {
+        rule: "required",
+        errorMessage: "Необходимо согласиться с правилами проекта",
+      },
+    ])
     .onSuccess((event) => {
       const thisForm = event.target; // наща форма
       const formData = new FormData(thisForm); // данные из нашей формы
@@ -155,7 +161,7 @@ forms.forEach((form) => {
           body: formData,
         })
           .then((response) => {
-            if (response.ok && form.chk.checked) {
+            if (response.ok && form.agree.checked) {
               thisForm.reset();
               if (currentModal) {
                 currentModal.classList.remove("is-open");

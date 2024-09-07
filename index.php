@@ -279,13 +279,14 @@
       </div>
     </section>
     <section class="models">
-      <div class="container-small">
-        <h2 class="models-title-glob">Сейчас для тест-драйва и обучения доступны следующие модели</h2>
+    <h2 class="models-title-glob">Сейчас для тест-драйва и обучения доступны следующие модели</h2>
+      <div class="container-small container-models">
         <div class="swiper models-swiper">
           <!-- обертка слайдера -->
           <ul class="swiper-wrapper">
             <!-- слайды -->
             <li class="swiper-slide">
+            <div class="card-wrapper">
               <img class="hit" src="img/svg/hit.svg" alt="hit" />
               <img
                 class="balance"
@@ -339,8 +340,10 @@
                   Записаться на тест-драйв
                 </button>
               </div>
+              </div>
             </li>
             <li class="swiper-slide">
+            <div class="card-wrapper">
               <img class="hit" src="img/svg/new.svg" alt="new" />
               <img
                 class="balance"
@@ -394,8 +397,10 @@
                   Записаться на тест-драйв
                 </button>
               </div>
+              </div>  
             </li>
             <li class="swiper-slide">
+            <div class="card-wrapper">
               <img class="hit" src="img/svg/hit.svg" alt="hit" />
               <img
                 class="balance"
@@ -449,8 +454,10 @@
                   Записаться на тест-драйв
                 </button>
               </div>
+              </div>
             </li>
             <li class="swiper-slide">
+            <div class="card-wrapper">
               <img class="hit" src="img/svg/new.svg" alt="new" />
               <img
                 class="balance"
@@ -503,6 +510,7 @@
                 <button class="button button-models" data-toggle="modal" data-target="#feedback-modal">
                   Записаться на тест-драйв
                 </button>
+              </div>
               </div>
             </li>
           </ul>
@@ -540,8 +548,8 @@
               </div>
             </div>
             <div class="checkbox-wrapper">
-                <label class="checkbox" for="chk">
-                  <input class="checkbox-pointer" type="checkbox" id="chk">
+                <label class="checkbox" for="agree">
+                  <input name="agree" class="checkbox-pointer" type="checkbox" id="agree">
                 </label>
                 <p class="checkbox-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="policy">политикой конфиденциальности</a></p>
               </div>
@@ -610,7 +618,7 @@
         </div>
         <hr class="hr">
         <div class="footer-midle">
-          <a href="./" class="logo">KUGOO</a>
+          <a href="./" class="logo footer-logo">KUGOO</a>
           <a href="./" class="logo-center footer-logo-center">KUGOO</a>
           <div class="badge-wrapper">
             <a class="badge" href="#"><img src="img/svg/google.svg" alt="google"></a>
@@ -700,8 +708,8 @@
               Оформить предзаказ
             </button>
             <div class="notify modal-notify">
-                <label class="modal-checkbox" for="chk">
-                  <input class="checkbox-pointer" type="checkbox" id="chk">
+                <label class="modal-checkbox" for="agree">
+                  <input name="agree" class="checkbox-pointer" type="checkbox" id="agree">
                 </label>
                 <p class="modal-checkbox-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="modal-policy">политикой конфиденциальности</a></p>
           </div>

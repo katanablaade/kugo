@@ -224,7 +224,7 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 0.4375rem;
-  padding-right: 37.625rem;
+  padding-right: 28.625rem;
 }
 .header-text {
   color: rgb(255, 255, 255);
@@ -346,7 +346,7 @@
   display: flex;
   padding: 0;
 }
-.swiper-slide {
+.card-wrapper {
   border: 1.5px solid rgb(234, 235, 237);
   border-radius: 10px;
   position: relative;
@@ -384,8 +384,8 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  margin-left: 8.25rem;
-  margin-right: 8.4375rem;
+  margin-left: 19.25rem;
+  margin-right: 19.4375rem;
   margin-bottom: 2rem;
 }
 .parametrs-list {
@@ -512,6 +512,9 @@
   padding-bottom: 4.875rem;
   display: flex;
 }
+.checkbox-wrapper > .just-validate-error-label {
+  font-size: 50px;
+}
 .input {
   border: 1px solid rgb(234, 235, 237);
   border-radius: 5px;
@@ -559,6 +562,10 @@
   border-radius: 2px;
   width: 16px;
   height: 16px;
+}
+.test-drive-image {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 .checkbox-text {
   margin: 0;
@@ -959,15 +966,28 @@
 }
 
 @media (max-width: 1200px) {
+  .container-small {
+    max-width: 60.375rem;
+  }
+  .container-models {
+    max-width: 51.7rem;
+  }
   .search-form {
     width: 25rem;
   }
   .nav-link {
-    margin-left: 2.875rem;
     margin-right: 28rem;
   }
+  .nav-top {
+    justify-content: space-between;
+  }
   .nav-bottom {
-    margin-left: 2.8125rem;
+    justify-content: space-between;
+  }
+  .form-footer-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
   .header-title {
     color: rgb(40, 39, 57);
@@ -983,7 +1003,13 @@
   .header-feautures-text {
     color: rgb(40, 39, 57);
   }
-
+  .test-drive-content-bottom {
+    padding-left: 1.5rem;
+    padding-right: 10px;
+  }
+  .footer-input-group {
+    margin-right: 0;
+  }
   .test-drive-content-top {
     padding-left: 1.5rem;
   }
@@ -1000,14 +1026,31 @@
     padding-right: 2.125rem;
     margin-bottom: 1.625rem;
   }
+  .models-title-glob {
+    font-size: 1.5rem;
+    line-height: 2.1875rem;
+    margin-top: 6.25rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
   .form-photo {
     display: none;
   }
   .request-form-title {
     padding: 0;
+    margin-left: 0;
   }
   .request-form {
     padding-right: 8.4375rem;
+    text-align: center;
+  }
+  .checkbox-wrapper {
+    justify-content: center;
+  }
+  .request-form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .checkbox-text {
     padding-right: 0;
@@ -1018,12 +1061,6 @@
   }
   .footer-top {
     margin-left: 0.625rem;
-  }
-  .footer-catalog-wrapper {
-    margin-right: 2.8125rem;
-  }
-  .footer-buyer-wrapper {
-    margin-right: 1.3125rem;
   }
   .badge-wrapper {
     margin-right: 5.25rem;
@@ -1046,24 +1083,35 @@
   .footer-midle {
     margin-right: 0.625rem;
   }
+  .form-footer-text {
+    margin-top: 10px;
+    text-align: center;
+  }
 }
 @media (max-width: 992px) {
+  .container-small {
+    max-width: 46.375rem;
+  }
+  .container-models {
+    max-width: 33.7rem;
+  }
   .search-form {
     width: 13rem;
   }
   .nav-link {
-    margin-left: 2.875rem;
     margin-right: 16rem;
-  }
-  .nav-bottom {
-    margin-left: 2.8125rem;
   }
   .header-content {
     background-position: bottom left;
     padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
   .header-title {
     padding-right: 1.625rem;
+    padding-right: 2.5rem;
+  }
+  .footer-midle {
+    flex-wrap: wrap;
   }
   .test-drive-wrapper {
     flex-direction: column;
@@ -1071,40 +1119,52 @@
   .test-drive-image {
     transform: scale(0.9);
   }
+  .footer-logo {
+    margin-right: 0;
+  }
   .test-drive-content-top {
     padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+  .test-drive-content-bottom {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
   .input-group {
     display: flex;
     flex-direction: column;
-    margin-left: 205px;
+    align-items: center;
   }
   .button-request {
     width: 263px;
     margin-top: 10px;
   }
-  .request-form-text,
-  .request-form-title {
-    margin-left: 135px;
+  .input {
+    margin-right: 0;
+  }
+  .badge-wrapper {
+    margin-right: 0;
   }
   .checkbox-wrapper {
-    margin-left: 135px;
   }
   .request-form {
     padding-left: 3.4375rem;
     padding-right: 3.4375rem;
   }
   .form-footer-text {
-    display: none;
+    margin-right: 0;
+    margin-left: 0;
   }
   .form-footer-wrapper {
     justify-content: center;
+    align-items: center;
+  }
+  .form-footer-wrapper {
+    padding-left: 123px;
+    padding-right: 123px;
   }
   .call {
     display: none;
-  }
-  .footer-top {
-    flex-direction: column;
   }
   .footer-buyer {
     padding: 0;
@@ -1125,18 +1185,23 @@
     margin-left: 10px;
   }
   .footer-midle {
-    margin-left: 3.625rem;
     justify-content: center;
     align-items: center;
-  }
-  .social-wrapper {
-    display: none;
   }
   .test-drive {
     margin-bottom: 0.5rem;
   }
+  .checkbox-text {
+    text-align: start;
+  }
 }
 @media (max-width: 768px) {
+  .container-small {
+    max-width: 35.375rem;
+  }
+  .container-models {
+    max-width: 16rem;
+  }
   .search-form {
     display: none;
   }
@@ -1145,18 +1210,18 @@
   }
   .nav-link {
     margin-right: 22rem;
-    margin-left: 2.875rem;
   }
   .logo-center {
     display: block;
     margin-right: 2.1875rem;
   }
   .logo-center-nav {
-    display: block;
+    display: none;
     margin-right: 2.1875rem;
   }
-  .logo {
-    display: none;
+  .form-footer-wrapper {
+    padding-right: 30px;
+    padding-left: 30px;
   }
   .nav-link-item {
     display: none;
@@ -1164,18 +1229,10 @@
   .input-group {
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
   }
   .button-request {
     width: 263px;
     margin-top: 10px;
-  }
-  .request-form-text,
-  .request-form-title {
-    margin-left: 10px;
-  }
-  .checkbox-wrapper {
-    margin-left: 10px;
   }
   .request-form {
     padding-left: 3.4375rem;
@@ -1185,12 +1242,22 @@
     width: 250px;
   }
   .footer-logo-center {
-    display: block;
+    display: none;
     margin-right: 2.1875rem;
     margin-left: 1.875rem;
   }
   .footer-bottom-card {
     display: none;
+  }
+  .checkbox-wrapper {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .footer-catalog-wrapper {
+    margin-right: 3.8125rem;
+  }
+  .badge-wrapper {
+    margin-right: 0;
   }
 }
 @media (max-width: 576px) {
@@ -1218,7 +1285,11 @@
   .logo-center {
     margin-right: 7.1875rem;
   }
+  .logo {
+    display: none;
+  }
   .logo-center-nav {
+    display: block;
     margin-right: 0;
   }
   .header-title {
@@ -1250,7 +1321,6 @@
     text-transform: uppercase;
     margin: 0;
     margin-top: 1.75rem;
-    padding-right: 4.125rem;
     margin-bottom: 1.5rem;
     margin-left: 5px;
   }
@@ -1258,10 +1328,8 @@
     padding-top: 1.5rem;
   }
   .footer-input {
-    width: 250px;
-  }
-  .footer-input-group {
-    display: none;
+    width: 210px;
+    margin-right: 0.5rem;
   }
   .footer-logo-center {
     display: block;
@@ -1293,5 +1361,38 @@
   }
   .request {
     margin-bottom: 0;
+  }
+  .test-drive-list {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  .footer-top {
+    flex-direction: column;
+    align-items: space-between;
+  }
+  .footer-logo-center {
+    display: none;
+  }
+  .footer-logo {
+    margin-right: 10px;
+    display: block;
+  }
+  .badge-wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-midle {
+    flex-direction: column;
+  }
+  .footer-logo {
+    margin-right: 0;
+  }
+  .social-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .button-social {
+    margin-right: 0;
+    margin-bottom: 5px;
   }
 }
