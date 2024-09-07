@@ -100,3 +100,94 @@ document.addEventListener("input", (e) => {
     input.value = result;
   }
 });
+
+let currentModal; // текущее модальное окно
+let modalDialog; // белое диалоговое окно
+let alertModal = document.querySelector("#alert-modal"); // окно с предупреждением или благодарностью
+
+const modalButtons = document.querySelectorAll("[data-toggle=modal]"); // переключатели модальных окон
+modalButtons.forEach((button) => {
+  /* клик по переключателю */
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+    /* определяем текущее открытое окно */
+    currentModal = document.querySelector(button.dataset.target);
+    /* открываем текущее окно */
+    currentModal.classList.toggle("is-open");
+    /* назначаем диалоговое окно */
+    modalDialog = currentModal.querySelector(".modal-dialog");
+    /* отслеживаем клик по окну и пустым областям */
+    currentModal.addEventListener("mousedown", (event) => {
+      /* если клик в пустую область (не диалог) */
+      if (!event.composedPath().includes(modalDialog)) {
+        /* закрываем окно */
+        currentModal.classList.remove("is-open");
+      }
+    });
+  });
+});
+/* ловим событие нажатия на кнопки */
+document.addEventListener("keyup", (event) => {
+  /* проверяем, что это Escape и текущее окно открыто */
+  if (event.key == "Escape" && currentModal.classList.contains("is-open")) {
+    /* закрываем текущее окно */
+    currentModal.classList.toggle("is-open");
+  }
+});
+
+const forms = document.querySelectorAll("form"); // Собираем формы
+forms.forEach((form) => {
+  const validation = new JustValidate(form, {
+    errorFieldCssClass: "is-invalid",
+  });
+  validation
+    .addField("[name=userphone]", [
+      {
+        rule: "required",
+        errorMessage: "Укажите телефон",
+      },
+    ])
+    .onSuccess((event) => {
+      const thisForm = event.target; // наща форма
+      const formData = new FormData(thisForm); // данные из нашей формы
+      const ajaxSend = (formData) => {
+        fetch(thisForm.getAttribute("action"), {
+          method: thisForm.getAttribute("method"),
+          body: formData,
+        })
+          .then((response) => {
+            if (response.ok) {
+              thisForm.reset();
+              if (currentModal) {
+                currentModal.classList.remove("is-open");
+              }
+              alertModal.classList.add("is-open");
+              currentModal = alertModal;
+              modalDialog = currentModal.querySelector(".modal-dialog");
+              /* отслеживаем клик по окну и пустым областям */
+              currentModal.addEventListener("mousedown", (event) => {
+                /* если клик в пустую область (не диалог) */
+                if (!event.composedPath().includes(modalDialog)) {
+                  /* закрываем окно */
+                }
+                const modalCloseButton = document.querySelectorAll(
+                  "[data-toggle=modal-close]"
+                );
+                modalCloseButton.forEach((button) => {
+                  button.addEventListener("click", (event) => {
+                    event.preventDefault();
+                    currentModal.classList.remove("is-open");
+                  });
+                });
+              });
+            } else {
+              alert("Ошибка: " + response.status);
+            }
+          })
+          .catch((error) => {
+            alert(error);
+          });
+      };
+      ajaxSend(formData);
+    });
+});

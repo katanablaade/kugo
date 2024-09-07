@@ -27,7 +27,7 @@
           <div class="nav-link">
             <a href="#" class="nav-link-item">Сервис</a>
             <a href="#" class="nav-link-item">Сотрудничество</a>
-            <a href="#" class="nav-link-item">Заказать звонок</a>
+            <a href="#" class="nav-link-item" data-toggle="modal" data-target="#feedback-modal">Заказать звонок</a>
             <div class="nav-icon">
               <a href="#" class="nav-icon">
                 <img
@@ -144,7 +144,7 @@
               >
             </div>
           </div>
-          <button type="submit" class="button-light">Записаться</button>
+          <button type="submit" class="button-light" data-toggle="modal" data-target="#feedback-modal">Записаться</button>
         </div>
       </div>
     </header>
@@ -335,7 +335,7 @@
                     alt="heart-2"
                   />
                 </a>
-                <button class="button button-models">
+                <button class="button button-models" data-toggle="modal" data-target="#feedback-modal">
                   Записаться на тест-драйв
                 </button>
               </div>
@@ -390,7 +390,7 @@
                     alt="heart-2"
                   />
                 </a>
-                <button class="button button-models">
+                <button class="button button-models" data-toggle="modal" data-target="#feedback-modal">
                   Записаться на тест-драйв
                 </button>
               </div>
@@ -445,7 +445,7 @@
                     alt="heart-2"
                   />
                 </a>
-                <button class="button button-models">
+                <button class="button button-models" data-toggle="modal" data-target="#feedback-modal">
                   Записаться на тест-драйв
                 </button>
               </div>
@@ -500,7 +500,7 @@
                     alt="heart-2"
                   />
                 </a>
-                <button class="button button-models">
+                <button class="button button-models" data-toggle="modal" data-target="#feedback-modal">
                   Записаться на тест-драйв
                 </button>
               </div>
@@ -605,7 +605,7 @@
             </div>
             </div>
           </ul>
-          <a href="#" class="call">Заказать звонок</a>
+          <a href="#" class="call" data-toggle="modal" data-target="#feedback-modal">Заказать звонок</a>
         </div>
         <hr class="hr">
         <div class="footer-midle">
@@ -665,6 +665,53 @@
         </div>
       </div>
     </footer>
+
+
+    <div class="modal" id="feedback-modal">
+      <div class="modal-dialog">
+        <div class="modal-dialog-wrapper">
+          <div class="modal-dialog-content">
+        <h2 class="modal-title">Запишитесь натест-драйв электросамоката</h2>
+        <p class="modal-text-top">и подберите модель для себя</p>
+        <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
+          <img width="20" height="20" src="img/svg/modal-close.svg" alt="modal-close" class="modal-close-icon">
+        </a>
+        <p class="modal-text">
+          Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.
+        </p>
+        <p class="modal-text-bottom">Как с вами удобнее связаться?</p>
+        <form action="handler.php" method="POST" class="modal-form">
+          <div class="input-group-wrapper input-group-vertical">
+            <div class="input-group modal-input-group">
+              <input
+                id="modal-user-phone"
+                type="tel"
+                class="input modal-input phone-mask"
+                name="userphone"
+                placeholder="+7 (___) __ - __ - __"
+                maxlength="30"
+                required
+              />
+            </div>
+          </div>
+          <div class="modal-form-footer">
+            <button type="submit" class="button modal-form-button">
+              Оформить предзаказ
+            </button>
+            <div class="notify modal-notify">
+                <label class="modal-checkbox">
+                  <input class="checkbox-pointer" type="checkbox">
+                </label>
+                <p class="modal-checkbox-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="modal-policy">политикой конфиденциальности</a></p>
+          </div>
+          </div> 
+        </form>
+      </div>
+        <img class="modal-image" src="img/modal-image.jpg" alt="modal-image">
+      </div>
+      </div>
+    </div>
+    </div>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
