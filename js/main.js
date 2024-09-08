@@ -170,7 +170,7 @@ validationMail
     },
     {
       rule: "email",
-      errorMessage: "Email is invalid!",
+      errorMessage: "Email должен содержать @",
     },
   ])
   .onSuccess(function (event) {
