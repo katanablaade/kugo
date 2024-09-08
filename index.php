@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <?php include_once("favicon.php")?>
     <title>Kugo WD</title>
   </head>
   <body>
