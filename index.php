@@ -575,9 +575,8 @@
             />
             <button type="submit" class="button button-form-footer">Подписаться</button>
           </div>
-          </div>
       </form>
-    </div>
+      </div>
     </section>
     <footer class="footer">
       <div class="container-small">
