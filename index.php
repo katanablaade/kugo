@@ -62,6 +62,7 @@
       <!-- nav-top -->
       <div class="container-small">
         <div class="nav-bottom">
+          <div class="nav-bottom-logo-wrapper">
           <a href="./" class="logo">KUGOO</a>
           <button class="button button-menu">
             <div class="button-content">
@@ -69,7 +70,8 @@
               Каталог
             </div>
           </button>
-          <a href="./" class="logo-center-nav">KUGOO</a>
+          </div>
+          <div class="nav-bottom-search-wrapper">
           <div class="search">
             <form class="search-form">
               <input type="text" placeholder="Искать самокат KUGO" />
@@ -95,6 +97,7 @@
                 <span class="shopping-cart-text">Корзина</span>
               </div>
             </a>
+          </div>
           </div>
         </div>
       </div>

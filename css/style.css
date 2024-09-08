@@ -637,6 +637,7 @@
   display: flex;
   padding-top: 2.9rem;
   margin-bottom: 2.9375rem;
+  align-items: flex-start;
 }
 .footer-contacts-wrapper {
   display: flex;
@@ -990,6 +991,12 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
+.nav-bottom-search-wrapper {
+  display: flex;
+}
+.nav-bottom-logo-wrapper {
+  display: flex;
+}
 @media (max-width: 1270px) {
   .form-photo {
     position: absolute;
@@ -1253,18 +1260,29 @@
   .container-models {
     max-width: 16rem;
   }
-  .search-form {
-    display: none;
-  }
   .button-menu {
-    margin-right: 4.8125rem;
+    margin-right: 0;
   }
   .nav-link {
-    margin-right: 22rem;
+    margin-right: 0;
   }
   .logo-center {
     display: block;
     margin-right: 2.1875rem;
+  }
+  .nav-bottom-logo-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .nav-bottom-search-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 0;
+  }
+  .search-form {
+    width: 25rem;
+    margin-right: 0;
   }
   .logo-center-nav {
     display: none;
@@ -1274,7 +1292,7 @@
     padding-right: 30px;
     padding-left: 30px;
   }
-  .nav-link-item {
+  .nav-icon {
     display: none;
   }
   .input-group {
@@ -1297,8 +1315,12 @@
     margin-right: 2.1875rem;
     margin-left: 1.875rem;
   }
+  .footer-bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .footer-bottom-card {
-    display: none;
+    margin-right: 0;
   }
   .checkbox-wrapper {
     padding-right: 20px;
@@ -1346,10 +1368,15 @@
   .modal-notify {
     margin-right: 0;
   }
+  .logo {
+    margin-right: 0;
+  }
+  .header-feautures {
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 576px) {
   .nav-bottom-icon {
-    display: none;
   }
   .nav-phone {
     margin-right: 0.625rem;
@@ -1373,7 +1400,7 @@
     margin-right: 7.1875rem;
   }
   .logo {
-    display: none;
+    margin-left: 0.625rem;
   }
   .logo-center-nav {
     display: block;
@@ -1430,7 +1457,7 @@
     margin-top: 5px;
   }
   .online-chat {
-    display: none;
+    margin-left: 10px;
   }
   .footer-bottom {
     justify-content: center;
@@ -1481,5 +1508,14 @@
   .button-social {
     margin-right: 0;
     margin-bottom: 5px;
+  }
+  .search-form {
+    width: 13rem;
+  }
+  .nav-bottom-search-wrapper {
+    justify-content: flex-start;
+  }
+  .nav-link {
+    gap: 10px;
   }
 }
