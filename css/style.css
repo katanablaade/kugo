@@ -738,8 +738,12 @@
   border: none;
   border-radius: 5px;
   padding: 0;
-  margin-right: 0.625rem;
+  margin-right: 17px;
   cursor: pointer;
+  text-decoration: none;
+}
+.button-social:last-child {
+  margin-right: 0px;
 }
 .social {
   display: grid;
@@ -1004,6 +1008,9 @@
 .footer-input-group > .just-validate-error-label {
   position: absolute;
   bottom: 56px;
+}
+.social-wrapper {
+  display: flex;
 }
 @media (max-width: 1270px) {
   .form-photo {
