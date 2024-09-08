@@ -166,7 +166,7 @@ validationMail
   .addField("#user-email", [
     {
       rule: "required",
-      errorMessage: "Field is required",
+      errorMessage: "Введите email",
     },
     {
       rule: "email",

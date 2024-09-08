@@ -997,6 +997,13 @@
 .nav-bottom-logo-wrapper {
   display: flex;
 }
+.footer-input-group {
+  position: relative;
+}
+.footer-input-group > .just-validate-error-label {
+  position: absolute;
+  bottom: 56px;
+}
 @media (max-width: 1270px) {
   .form-photo {
     position: absolute;
