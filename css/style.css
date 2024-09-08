@@ -976,7 +976,7 @@
   background-position: center center;
 }
 .checkbox-pointer:checked + label::before {
-  background-image: url("/img/svg/check.svg");
+  background-image: url("/img/svg/check.png");
 }
 .checkbox-pointer-modal + label::before {
   content: "";
@@ -1429,7 +1429,7 @@
     padding-right: 1.25rem;
   }
   .test-drive-content-bottom {
-    padding-right: 1.25rem;
+    padding-left: 3.5rem;
     padding-left: 2.9375rem;
   }
   .test-drive-title-top {
