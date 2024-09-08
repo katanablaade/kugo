@@ -95,9 +95,10 @@
   margin: 0;
   cursor: pointer;
 }
-.button-content {
-  display: flex;
-  padding: 0.5rem 1.125rem 0.5625rem 0.9375rem;
+
+.button-menu {
+  margin-right: 1.3125rem;
+  padding: 8px 18px 9px 15px;
   gap: 0.8125rem;
   color: rgb(255, 255, 255);
   font-family: "Jost";
@@ -105,8 +106,8 @@
   font-weight: 400;
   line-height: 1.4375rem;
 }
-.button-menu {
-  margin-right: 1.3125rem;
+.menu {
+  margin-right: 8px;
 }
 .search-form {
   position: relative;

@@ -66,10 +66,8 @@
           <div class="nav-bottom-logo-wrapper">
           <a href="./" class="logo">KUGOO</a>
           <button class="button button-menu">
-            <div class="button-content">
               <img src="img/svg/menu.svg" alt="menu" class="menu" />
               Каталог
-            </div>
           </button>
           </div>
           <div class="nav-bottom-search-wrapper">
@@ -554,8 +552,8 @@
             <div class="checkbox-wrapper">
             <input name="agree" class="checkbox-pointer" type="checkbox" id="agree">
                 <label for="agree">
-                <p class="checkbox-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="policy">политикой конфиденциальности</a></p>
                 </label>
+                <p class="checkbox-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="policy">политикой конфиденциальности</a></p>
               </div>
           </form>
         </div>
@@ -577,7 +575,6 @@
             />
             <button type="submit" class="button button-form-footer">Подписаться</button>
           </div>
-        </div>
       </form>
     </div>
     </section>
@@ -621,7 +618,7 @@
           </ul>
           <a href="#" class="call" data-toggle="modal" data-target="#feedback-modal">Заказать звонок</a>
         </div>
-        <hr class="hr">
+        <hr class="hr"/>
         <div class="footer-midle">
           <a href="./" class="logo footer-logo">KUGOO</a>
           <a href="./" class="logo-center footer-logo-center">KUGOO</a>
