@@ -548,10 +548,10 @@
               </div>
             </div>
             <div class="checkbox-wrapper">
-                <label class="checkbox" for="agree">
-                  <input name="agree" class="checkbox-pointer" type="checkbox" id="agree">
-                </label>
+            <input name="agree" class="checkbox-pointer" type="checkbox" id="agree">
+                <label for="agree">
                 <p class="checkbox-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="policy">политикой конфиденциальности</a></p>
+                </label>
               </div>
           </form>
         </div>
@@ -561,11 +561,12 @@
     <section class="form-footer">
       <div class="form-footer-wrapper">
       <h2 class="form-footer-text">Оставьте свою почту и станьте первым, кто получит скидку на новые самокаты</h2>
-      <form action="#" class="footer-form">
+      <form action="handlermail.php" method="POST" class="footer-form">
         <div class="input-group-wrapper">
           <div class="footer-input-group">
             <input
-              id="user-phone"
+              name="usermail"
+              id="user-email"
               type="email"
               class="input-mail footer-input"
               placeholder="Введите Ваш email"
@@ -708,10 +709,10 @@
               Оформить предзаказ
             </button>
             <div class="notify modal-notify">
-                <label class="modal-checkbox" for="agree">
-                  <input name="agree" class="checkbox-pointer" type="checkbox" id="agree">
-                </label>
+            <input name="agree" class="checkbox-pointer checkbox-pointer-modal" type="checkbox" id="agree-modal">
+                <label class="modal-checkbox" for="agree-modal">
                 <p class="modal-checkbox-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="modal-policy">политикой конфиденциальности</a></p>
+                </label>
           </div>
           </div> 
         </form>
@@ -720,6 +721,20 @@
       </div>
       </div>
     </div>
+    </div>
+    <div class="modal" id="alert-modal">
+      <div class="modal-dialog">
+        <a href="#" class="modal-close" data-toggle="modal" data-target="#alert-modal">
+        <img width="20" height="20" src="img/svg/modal-close.svg" alt="modal-close" class="modal-close-icon">
+        </a>
+        <h2 class="modal-title">Спасибо за заявку!</h2>
+        <p class="modal-text">
+        Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!
+        </p>
+        <button type="submit" class="button modal-form-button" data-toggle="modal-close">
+        Вернуться на главную
+            </button>
+      </div>
     </div>
     <script src="js/just-validate.production.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>

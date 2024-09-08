@@ -103,6 +103,7 @@ document.addEventListener("input", (e) => {
 
 let currentModal; // текущее модальное окно
 let modalDialog; // белое диалоговое окно
+let alertModal = document.querySelector("#alert-modal"); // окно с предупреждением или благодарностью
 
 const modalButtons = document.querySelectorAll("[data-toggle=modal]"); // переключатели модальных окон
 modalButtons.forEach((button) => {
@@ -161,18 +162,36 @@ forms.forEach((form) => {
           body: formData,
         })
           .then((response) => {
-            if (response.ok && form.agree.checked) {
+            if (response.ok) {
               thisForm.reset();
               if (currentModal) {
                 currentModal.classList.remove("is-open");
               }
+              alertModal.classList.add("is-open");
+              currentModal = alertModal;
+              modalDialog = currentModal.querySelector(".modal-dialog");
+              /* отслеживаем клик по окну и пустым областям */
+              currentModal.addEventListener("mousedown", (event) => {
+                /* если клик в пустую область (не диалог) */
+                if (!event.composedPath().includes(modalDialog)) {
+                  /* закрываем окно */
+                }
+                const modalCloseButton = document.querySelectorAll(
+                  "[data-toggle=modal-close]"
+                );
+                modalCloseButton.forEach((button) => {
+                  button.addEventListener("click", (event) => {
+                    event.preventDefault();
+                    currentModal.classList.remove("is-open");
+                  });
+                });
+              });
             } else {
-              alert("Ошибка: Необходимо согласиться с правилами проекта");
-              return;
+              alert("Ошибка: " + response.status);
             }
           })
-          .catch(() => {
-            alert("Ошибка: Необходимо согласиться с правилами проекта");
+          .catch((error) => {
+            alert(error);
           });
       };
       ajaxSend(formData);
