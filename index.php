@@ -530,7 +530,7 @@
       <div class="container-large">
         <div class="request-form-wrapper">
           <img src="img/form-photo.png" alt="form-photo" class="form-photo" />
-          <form action="handler.php" method="POST" class="request-form" id="form">
+          <form action="handler.php" method="POST" class="request-form form-glob">
             <h2 class="title request-form-title">Нет нужной модели, которую хотите протестировать?</h2>
             <p class="request-form-text">
               Оставьте заявку, и менеджер подберет нужный самокат
@@ -561,7 +561,7 @@
     <section class="form-footer">
       <div class="form-footer-wrapper">
       <h2 class="form-footer-text">Оставьте свою почту и станьте первым, кто получит скидку на новые самокаты</h2>
-      <form action="handlermail.php" method="POST" class="footer-form">
+      <form action="handlermail.php" method="POST" class="footer-form" id="form">
         <div class="input-group-wrapper">
           <div class="footer-input-group">
             <input
@@ -690,7 +690,7 @@
           Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.
         </p>
         <p class="modal-text-bottom">Как с вами удобнее связаться?</p>
-        <form action="handler.php" method="POST" class="modal-form" id="form">
+        <form action="handler.php" method="POST" class="modal-form form-glob">
           <div class="input-group-wrapper input-group-vertical">
             <div class="input-group modal-input-group">
               <input

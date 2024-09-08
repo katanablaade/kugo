@@ -135,7 +135,7 @@ document.addEventListener("keyup", (event) => {
   }
 });
 
-const forms = document.querySelectorAll("#form"); // Собираем формы
+const forms = document.querySelectorAll(".form-glob"); // Собираем формы
 forms.forEach((form) => {
   const validation = new JustValidate(form, {
     errorFieldCssClass: "is-invalid",
@@ -153,47 +153,71 @@ forms.forEach((form) => {
         errorMessage: "Необходимо согласиться с правилами проекта",
       },
     ])
-    .onSuccess((event) => {
-      const thisForm = event.target; // наща форма
-      const formData = new FormData(thisForm); // данные из нашей формы
-      const ajaxSend = (formData) => {
-        fetch(thisForm.getAttribute("action"), {
-          method: thisForm.getAttribute("method"),
-          body: formData,
-        })
-          .then((response) => {
-            if (response.ok) {
-              thisForm.reset();
-              if (currentModal) {
-                currentModal.classList.remove("is-open");
-              }
-              alertModal.classList.add("is-open");
-              currentModal = alertModal;
-              modalDialog = currentModal.querySelector(".modal-dialog");
-              /* отслеживаем клик по окну и пустым областям */
-              currentModal.addEventListener("mousedown", (event) => {
-                /* если клик в пустую область (не диалог) */
-                if (!event.composedPath().includes(modalDialog)) {
-                  /* закрываем окно */
-                }
-                const modalCloseButton = document.querySelectorAll(
-                  "[data-toggle=modal-close]"
-                );
-                modalCloseButton.forEach((button) => {
-                  button.addEventListener("click", (event) => {
-                    event.preventDefault();
-                    currentModal.classList.remove("is-open");
-                  });
-                });
-              });
-            } else {
-              alert("Ошибка: " + response.status);
-            }
-          })
-          .catch((error) => {
-            alert(error);
-          });
-      };
-      ajaxSend(formData);
+    .onSuccess(function (event) {
+      formSuccessSend(event);
     });
 });
+
+const formMail = document.querySelector("#form");
+const validationMail = new JustValidate(formMail, {
+  errorFieldCssClass: "is-invalid",
+});
+validationMail
+  .addField("#user-email", [
+    {
+      rule: "required",
+      errorMessage: "Field is required",
+    },
+    {
+      rule: "email",
+      errorMessage: "Email is invalid!",
+    },
+  ])
+  .onSuccess(function (event) {
+    formSuccessSend(event);
+  });
+
+// Функция успешной отправки для всех форм
+const formSuccessSend = function (event) {
+  const thisForm = event.target; // наща форма
+  const formData = new FormData(thisForm); // данные из нашей формы
+  const ajaxSend = (formData) => {
+    fetch(thisForm.getAttribute("action"), {
+      method: thisForm.getAttribute("method"),
+      body: formData,
+    })
+      .then((response) => {
+        if (response.ok) {
+          thisForm.reset();
+          if (currentModal) {
+            currentModal.classList.remove("is-open");
+          }
+          alertModal.classList.add("is-open");
+          currentModal = alertModal;
+          modalDialog = currentModal.querySelector(".modal-dialog");
+          /* отслеживаем клик по окну и пустым областям */
+          currentModal.addEventListener("mousedown", (event) => {
+            /* если клик в пустую область (не диалог) */
+            if (!event.composedPath().includes(modalDialog)) {
+              /* закрываем окно */
+            }
+            const modalCloseButton = document.querySelectorAll(
+              "[data-toggle=modal-close]"
+            );
+            modalCloseButton.forEach((button) => {
+              button.addEventListener("click", (event) => {
+                event.preventDefault();
+                currentModal.classList.remove("is-open");
+              });
+            });
+          });
+        } else {
+          alert("Ошибка: " + response.status);
+        }
+      })
+      .catch((error) => {
+        alert(error);
+      });
+  };
+  ajaxSend(formData);
+};
