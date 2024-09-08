@@ -28,7 +28,13 @@
           <div class="nav-link">
             <a href="#" class="nav-link-item">Сервис</a>
             <a href="#" class="nav-link-item">Сотрудничество</a>
-            <a href="#" class="nav-link-item" data-toggle="modal" data-target="#feedback-modal">Заказать звонок</a>
+            <a
+              href="#"
+              class="nav-link-item"
+              data-toggle="modal"
+              data-target="#feedback-modal"
+              >Заказать звонок</a
+            >
             <div class="nav-icon">
               <a href="#" class="nav-icon">
                 <img
@@ -64,39 +70,39 @@
       <div class="container-small">
         <div class="nav-bottom">
           <div class="nav-bottom-logo-wrapper">
-          <a href="./" class="logo">KUGOO</a>
-          <button class="button button-menu">
+            <a href="./" class="logo">KUGOO</a>
+            <button class="button button-menu">
               <img src="img/svg/menu.svg" alt="menu" class="menu" />
               Каталог
-          </button>
+            </button>
           </div>
           <div class="nav-bottom-search-wrapper">
-          <div class="search">
-            <form class="search-form">
-              <input type="text" placeholder="Искать самокат KUGO" />
-              <button class="button" type="submit">
-                <img
-                  src="img/svg/search.svg"
-                  alt="search"
-                  class="search-icon"
-                />
-              </button>
-            </form>
-          </div>
-          <div class="nav-bottom-icon">
-            <a href="#" class="nav-bottom-icon-items">
-              <img src="img/svg/balance.svg" alt="balance" />
-            </a>
-            <a href="#" class="nav-bottom-icon-items">
-              <img src="img/svg/heart.svg" alt="heart" />
-            </a>
-            <a href="#" class="nav-bottom-icon-items">
-              <div class="shopping-cart">
-                <img src="img/svg/shopping-cart.svg" alt="shopping-cart" />
-                <span class="shopping-cart-text">Корзина</span>
-              </div>
-            </a>
-          </div>
+            <div class="search">
+              <form class="search-form">
+                <input type="text" placeholder="Искать самокат KUGO" />
+                <button class="button" type="submit">
+                  <img
+                    src="img/svg/search.svg"
+                    alt="search"
+                    class="search-icon"
+                  />
+                </button>
+              </form>
+            </div>
+            <div class="nav-bottom-icon">
+              <a href="#" class="nav-bottom-icon-items">
+                <img src="img/svg/balance.svg" alt="balance" />
+              </a>
+              <a href="#" class="nav-bottom-icon-items">
+                <img src="img/svg/heart.svg" alt="heart" />
+              </a>
+              <a href="#" class="nav-bottom-icon-items">
+                <div class="shopping-cart">
+                  <img src="img/svg/shopping-cart.svg" alt="shopping-cart" />
+                  <span class="shopping-cart-text">Корзина</span>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -146,7 +152,14 @@
               >
             </div>
           </div>
-          <button type="submit" class="button-light" data-toggle="modal" data-target="#feedback-modal">Записаться</button>
+          <button
+            type="submit"
+            class="button-light"
+            data-toggle="modal"
+            data-target="#feedback-modal"
+          >
+            Записаться
+          </button>
         </div>
       </div>
     </header>
@@ -281,238 +294,264 @@
       </div>
     </section>
     <section class="models">
-    <h2 class="models-title-glob">Сейчас для тест-драйва и обучения доступны следующие модели</h2>
+      <h2 class="models-title-glob">
+        Сейчас для тест-драйва и обучения доступны следующие модели
+      </h2>
       <div class="container-small container-models">
         <div class="swiper models-swiper">
           <!-- обертка слайдера -->
           <ul class="swiper-wrapper">
             <!-- слайды -->
             <li class="swiper-slide">
-            <div class="card-wrapper">
-              <img class="hit" src="img/svg/hit.svg" alt="hit" />
-              <img
-                class="balance"
-                src="img/svg/balance-2.svg"
-                alt="balance-2"
-              />
-              <img
-                class="models-image"
-                src="img/models-image.jpeg"
-                alt="models-image"
-              />
-              <div class="slider-text">
-                <h3 class="models-title">Kugoo Kirin M4</h3>
-                <ul class="parametrs-list">
-                  <li class="parametrs-list-item">
-                    <img src="img/svg/accumulator.svg" alt="accumulator" />2000
-                    mAh
-                  </li>
-                  <li class="parametrs-list-item">
-                    <img src="img/svg/speedometer.svg" alt="speedometer" />60
-                    км/ч
-                  </li>
-                  <li class="parametrs-list-item">
-                    <img src="img/svg/power.svg" alt="power" />1,2 л.с.
-                  </li>
-                  <li class="parametrs-list-item">
-                    <img src="img/svg/timer.svg" alt="timer" />5 часов
-                  </li>
-                </ul>
-                <span class="sale">39 900 ₽</span>
-                <h3 class="price">29 900 ₽</h3>
-                <a href="#" class="circle-1">
-                  <img
-                    class="shopping-cart-2"
-                    width="20"
-                    height="20"
-                    src="img/svg/shopping-cart-2.svg"
-                    alt="shopping-cart-2"
-                  />
-                </a>
-                <a href="#" class="circle-2">
-                  <img
-                    class="heart-2"
-                    width="20"
-                    height="20"
-                    src="img/svg/heart-2.svg"
-                    alt="heart-2"
-                  />
-                </a>
-                <button class="button button-models" data-toggle="modal" data-target="#feedback-modal">
-                  Записаться на тест-драйв
-                </button>
-              </div>
-              </div>
-            </li>
-            <li class="swiper-slide">
-            <div class="card-wrapper">
-              <img class="hit" src="img/svg/new.svg" alt="new" />
-              <img
-                class="balance"
-                src="img/svg/balance-2.svg"
-                alt="balance-2"
-              />
-              <img
-                class="models-image"
-                src="img/models-image.jpeg"
-                alt="models-image"
-              />
-              <div class="slider-text">
-                <h3 class="models-title">Kugoo Kirin M4</h3>
-                <ul class="parametrs-list">
-                  <li class="parametrs-list-item">
-                    <img src="img/svg/accumulator.svg" alt="accumulator" />2000
-                    mAh
-                  </li>
-                  <li class="parametrs-list-item">
-                    <img src="img/svg/speedometer.svg" alt="speedometer" />60
-                    км/ч
-                  </li>
-                  <li class="parametrs-list-item">
-                    <img src="img/svg/power.svg" alt="power" />1,2 л.с.
-                  </li>
-                  <li class="parametrs-list-item">
-                    <img src="img/svg/timer.svg" alt="timer" />5 часов
-                  </li>
-                </ul>
-                <span class="sale">39 900 ₽</span>
-                <h3 class="price">29 900 ₽</h3>
-                <a href="#" class="circle-1">
-                  <img
-                    class="shopping-cart-2"
-                    width="20"
-                    height="20"
-                    src="img/svg/shopping-cart-2.svg"
-                    alt="shopping-cart-2"
-                  />
-                </a>
-                <a href="#" class="circle-2">
-                  <img
-                    class="heart-2"
-                    width="20"
-                    height="20"
-                    src="img/svg/heart-2.svg"
-                    alt="heart-2"
-                  />
-                </a>
-                <button class="button button-models" data-toggle="modal" data-target="#feedback-modal">
-                  Записаться на тест-драйв
-                </button>
-              </div>
-              </div>  
-            </li>
-            <li class="swiper-slide">
-            <div class="card-wrapper">
-              <img class="hit" src="img/svg/hit.svg" alt="hit" />
-              <img
-                class="balance"
-                src="img/svg/balance-2.svg"
-                alt="balance-2"
-              />
-              <img
-                class="models-image"
-                src="img/models-image.jpeg"
-                alt="models-image"
-              />
-              <div class="slider-text">
-                <h3 class="models-title">Kugoo Kirin M4</h3>
-                <ul class="parametrs-list">
-                  <li class="parametrs-list-item">
-                    <img src="img/svg/accumulator.svg" alt="accumulator" />2000
-                    mAh
-                  </li>
-                  <li class="parametrs-list-item">
-                    <img src="img/svg/speedometer.svg" alt="speedometer" />60
-                    км/ч
-                  </li>
-                  <li class="parametrs-list-item">
-                    <img src="img/svg/power.svg" alt="power" />1,2 л.с.
-                  </li>
-                  <li class="parametrs-list-item">
-                    <img src="img/svg/timer.svg" alt="timer" />5 часов
-                  </li>
-                </ul>
-                <span class="sale">39 900 ₽</span>
-                <h3 class="price">29 900 ₽</h3>
-                <a href="#" class="circle-1">
-                  <img
-                    class="shopping-cart-2"
-                    width="20"
-                    height="20"
-                    src="img/svg/shopping-cart-2.svg"
-                    alt="shopping-cart-2"
-                  />
-                </a>
-                <a href="#" class="circle-2">
-                  <img
-                    class="heart-2"
-                    width="20"
-                    height="20"
-                    src="img/svg/heart-2.svg"
-                    alt="heart-2"
-                  />
-                </a>
-                <button class="button button-models" data-toggle="modal" data-target="#feedback-modal">
-                  Записаться на тест-драйв
-                </button>
-              </div>
+              <div class="card-wrapper">
+                <img class="hit" src="img/svg/hit.svg" alt="hit" />
+                <img
+                  class="balance"
+                  src="img/svg/balance-2.svg"
+                  alt="balance-2"
+                />
+                <img
+                  class="models-image"
+                  src="img/models-image.jpeg"
+                  alt="models-image"
+                />
+                <div class="slider-text">
+                  <h3 class="models-title">Kugoo Kirin M4</h3>
+                  <ul class="parametrs-list">
+                    <li class="parametrs-list-item">
+                      <img
+                        src="img/svg/accumulator.svg"
+                        alt="accumulator"
+                      />2000 mAh
+                    </li>
+                    <li class="parametrs-list-item">
+                      <img src="img/svg/speedometer.svg" alt="speedometer" />60
+                      км/ч
+                    </li>
+                    <li class="parametrs-list-item">
+                      <img src="img/svg/power.svg" alt="power" />1,2 л.с.
+                    </li>
+                    <li class="parametrs-list-item">
+                      <img src="img/svg/timer.svg" alt="timer" />5 часов
+                    </li>
+                  </ul>
+                  <span class="sale">39 900 ₽</span>
+                  <h3 class="price">29 900 ₽</h3>
+                  <a href="#" class="circle-1">
+                    <img
+                      class="shopping-cart-2"
+                      width="20"
+                      height="20"
+                      src="img/svg/shopping-cart-2.svg"
+                      alt="shopping-cart-2"
+                    />
+                  </a>
+                  <a href="#" class="circle-2">
+                    <img
+                      class="heart-2"
+                      width="20"
+                      height="20"
+                      src="img/svg/heart-2.svg"
+                      alt="heart-2"
+                    />
+                  </a>
+                  <button
+                    class="button button-models"
+                    data-toggle="modal"
+                    data-target="#feedback-modal"
+                  >
+                    Записаться на тест-драйв
+                  </button>
+                </div>
               </div>
             </li>
             <li class="swiper-slide">
-            <div class="card-wrapper">
-              <img class="hit" src="img/svg/new.svg" alt="new" />
-              <img
-                class="balance"
-                src="img/svg/balance-2.svg"
-                alt="balance-2"
-              />
-              <img
-                class="models-image"
-                src="img/models-image.jpeg"
-                alt="models-image"
-              />
-              <div class="slider-text">
-                <h3 class="models-title">Kugoo Kirin M4</h3>
-                <ul class="parametrs-list">
-                  <li class="parametrs-list-item">
-                    <img src="img/svg/accumulator.svg" alt="accumulator" />2000
-                    mAh
-                  </li>
-                  <li class="parametrs-list-item">
-                    <img src="img/svg/speedometer.svg" alt="speedometer" />60
-                    км/ч
-                  </li>
-                  <li class="parametrs-list-item">
-                    <img src="img/svg/power.svg" alt="power" />1,2 л.с.
-                  </li>
-                  <li class="parametrs-list-item">
-                    <img src="img/svg/timer.svg" alt="timer" />5 часов
-                  </li>
-                </ul>
-                <span class="sale">39 900 ₽</span>
-                <h3 class="price">29 900 ₽</h3>
-                <a href="#" class="circle-1">
-                  <img
-                    class="shopping-cart-2"
-                    width="20"
-                    height="20"
-                    src="img/svg/shopping-cart-2.svg"
-                    alt="shopping-cart-2"
-                  />
-                </a>
-                <a href="#" class="circle-2">
-                  <img
-                    class="heart-2"
-                    width="20"
-                    height="20"
-                    src="img/svg/heart-2.svg"
-                    alt="heart-2"
-                  />
-                </a>
-                <button class="button button-models" data-toggle="modal" data-target="#feedback-modal">
-                  Записаться на тест-драйв
-                </button>
+              <div class="card-wrapper">
+                <img class="hit" src="img/svg/new.svg" alt="new" />
+                <img
+                  class="balance"
+                  src="img/svg/balance-2.svg"
+                  alt="balance-2"
+                />
+                <img
+                  class="models-image"
+                  src="img/models-image.jpeg"
+                  alt="models-image"
+                />
+                <div class="slider-text">
+                  <h3 class="models-title">Kugoo Kirin M4</h3>
+                  <ul class="parametrs-list">
+                    <li class="parametrs-list-item">
+                      <img
+                        src="img/svg/accumulator.svg"
+                        alt="accumulator"
+                      />2000 mAh
+                    </li>
+                    <li class="parametrs-list-item">
+                      <img src="img/svg/speedometer.svg" alt="speedometer" />60
+                      км/ч
+                    </li>
+                    <li class="parametrs-list-item">
+                      <img src="img/svg/power.svg" alt="power" />1,2 л.с.
+                    </li>
+                    <li class="parametrs-list-item">
+                      <img src="img/svg/timer.svg" alt="timer" />5 часов
+                    </li>
+                  </ul>
+                  <span class="sale">39 900 ₽</span>
+                  <h3 class="price">29 900 ₽</h3>
+                  <a href="#" class="circle-1">
+                    <img
+                      class="shopping-cart-2"
+                      width="20"
+                      height="20"
+                      src="img/svg/shopping-cart-2.svg"
+                      alt="shopping-cart-2"
+                    />
+                  </a>
+                  <a href="#" class="circle-2">
+                    <img
+                      class="heart-2"
+                      width="20"
+                      height="20"
+                      src="img/svg/heart-2.svg"
+                      alt="heart-2"
+                    />
+                  </a>
+                  <button
+                    class="button button-models"
+                    data-toggle="modal"
+                    data-target="#feedback-modal"
+                  >
+                    Записаться на тест-драйв
+                  </button>
+                </div>
               </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="card-wrapper">
+                <img class="hit" src="img/svg/hit.svg" alt="hit" />
+                <img
+                  class="balance"
+                  src="img/svg/balance-2.svg"
+                  alt="balance-2"
+                />
+                <img
+                  class="models-image"
+                  src="img/models-image.jpeg"
+                  alt="models-image"
+                />
+                <div class="slider-text">
+                  <h3 class="models-title">Kugoo Kirin M4</h3>
+                  <ul class="parametrs-list">
+                    <li class="parametrs-list-item">
+                      <img
+                        src="img/svg/accumulator.svg"
+                        alt="accumulator"
+                      />2000 mAh
+                    </li>
+                    <li class="parametrs-list-item">
+                      <img src="img/svg/speedometer.svg" alt="speedometer" />60
+                      км/ч
+                    </li>
+                    <li class="parametrs-list-item">
+                      <img src="img/svg/power.svg" alt="power" />1,2 л.с.
+                    </li>
+                    <li class="parametrs-list-item">
+                      <img src="img/svg/timer.svg" alt="timer" />5 часов
+                    </li>
+                  </ul>
+                  <span class="sale">39 900 ₽</span>
+                  <h3 class="price">29 900 ₽</h3>
+                  <a href="#" class="circle-1">
+                    <img
+                      class="shopping-cart-2"
+                      width="20"
+                      height="20"
+                      src="img/svg/shopping-cart-2.svg"
+                      alt="shopping-cart-2"
+                    />
+                  </a>
+                  <a href="#" class="circle-2">
+                    <img
+                      class="heart-2"
+                      width="20"
+                      height="20"
+                      src="img/svg/heart-2.svg"
+                      alt="heart-2"
+                    />
+                  </a>
+                  <button
+                    class="button button-models"
+                    data-toggle="modal"
+                    data-target="#feedback-modal"
+                  >
+                    Записаться на тест-драйв
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="card-wrapper">
+                <img class="hit" src="img/svg/new.svg" alt="new" />
+                <img
+                  class="balance"
+                  src="img/svg/balance-2.svg"
+                  alt="balance-2"
+                />
+                <img
+                  class="models-image"
+                  src="img/models-image.jpeg"
+                  alt="models-image"
+                />
+                <div class="slider-text">
+                  <h3 class="models-title">Kugoo Kirin M4</h3>
+                  <ul class="parametrs-list">
+                    <li class="parametrs-list-item">
+                      <img
+                        src="img/svg/accumulator.svg"
+                        alt="accumulator"
+                      />2000 mAh
+                    </li>
+                    <li class="parametrs-list-item">
+                      <img src="img/svg/speedometer.svg" alt="speedometer" />60
+                      км/ч
+                    </li>
+                    <li class="parametrs-list-item">
+                      <img src="img/svg/power.svg" alt="power" />1,2 л.с.
+                    </li>
+                    <li class="parametrs-list-item">
+                      <img src="img/svg/timer.svg" alt="timer" />5 часов
+                    </li>
+                  </ul>
+                  <span class="sale">39 900 ₽</span>
+                  <h3 class="price">29 900 ₽</h3>
+                  <a href="#" class="circle-1">
+                    <img
+                      class="shopping-cart-2"
+                      width="20"
+                      height="20"
+                      src="img/svg/shopping-cart-2.svg"
+                      alt="shopping-cart-2"
+                    />
+                  </a>
+                  <a href="#" class="circle-2">
+                    <img
+                      class="heart-2"
+                      width="20"
+                      height="20"
+                      src="img/svg/heart-2.svg"
+                      alt="heart-2"
+                    />
+                  </a>
+                  <button
+                    class="button button-models"
+                    data-toggle="modal"
+                    data-target="#feedback-modal"
+                  >
+                    Записаться на тест-драйв
+                  </button>
+                </div>
               </div>
             </li>
           </ul>
@@ -532,28 +571,44 @@
       <div class="container-large">
         <div class="request-form-wrapper">
           <img src="img/form-photo.png" alt="form-photo" class="form-photo" />
-          <form action="handler.php" method="POST" class="request-form form-glob">
-            <h2 class="title request-form-title">Нет нужной модели, которую хотите протестировать?</h2>
+          <form
+            action="handler.php"
+            method="POST"
+            class="request-form form-glob"
+          >
+            <h2 class="title request-form-title">
+              Нет нужной модели, которую хотите протестировать?
+            </h2>
             <p class="request-form-text">
-            Оставьте заявку, и менеджер подберет нужный самокат
+              Оставьте заявку, и менеджер подберет нужный самокат
             </p>
             <div class="input-group-wrapper">
               <div class="input-group">
                 <input
-                 name="userphone"
+                  name="userphone"
                   id="user-phone"
                   type="tel"
                   class="input phone-mask"
                   placeholder="+7 (___) __ - __ - __"
                 />
-                <button type="submit" class="button button-request">Оставить заявку на тест-драйв</button>
+                <button type="submit" class="button button-request">
+                  Оставить заявку на тест-драйв
+                </button>
               </div>
-              </div>
-              <div class="checkbox-wrapper">
-                <input name="agree" class="checkbox-pointer" type="checkbox" id="agree">
-                <label for="agree">
-                </label>
-                <p class="checkbox-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="policy">политикой конфиденциальности</a></p>
+            </div>
+            <div class="checkbox-wrapper">
+              <input
+                name="agree"
+                class="checkbox-pointer"
+                type="checkbox"
+                id="agree"
+              />
+              <label for="agree"> </label>
+              <p class="checkbox-text">
+                Нажимая на кнопку, вы соглашаетесь на обработку персональных
+                данных и
+                <a href="#" class="policy">политикой конфиденциальности</a>
+              </p>
             </div>
           </form>
         </div>
@@ -561,180 +616,306 @@
     </section>
     <section class="form-footer">
       <div class="form-footer-wrapper">
-      <h2 class="form-footer-text">Оставьте свою почту и станьте первым, кто получит скидку на новые самокаты</h2>
-      <form action="handlermail.php" method="POST" class="footer-form" id="form">
-        <div class="input-group-wrapper">
-          <div class="footer-input-group">
-            <input
-              name="usermail"
-              id="user-email"
-              type="email"
-              class="input-mail footer-input"
-              placeholder="Введите Ваш email"
-            />
-            <button type="submit" class="button button-form-footer">Подписаться</button>
+        <h2 class="form-footer-text">
+          Оставьте свою почту и станьте первым, кто получит скидку на новые
+          самокаты
+        </h2>
+        <form
+          action="handlermail.php"
+          method="POST"
+          class="footer-form"
+          id="form"
+        >
+          <div class="input-group-wrapper">
+            <div class="footer-input-group">
+              <input
+                name="usermail"
+                id="user-email"
+                type="email"
+                class="input-mail footer-input"
+                placeholder="Введите Ваш email"
+              />
+              <button type="submit" class="button button-form-footer">
+                Подписаться
+              </button>
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
       </div>
     </section>
     <footer class="footer">
       <div class="container-small">
         <div class="footer-top">
           <div class="footer-catalog-wrapper">
-          <h2 class="footer-title">Каталог товаров</h2>
-          <ul class="footer-catalog">
-            <li class="footer-catalog-item"><a href="#" class="footer-menu-link">Электросамокаты</a></li>
-            <li class="footer-catalog-item"><a href="#" class="footer-menu-link">Электроскутеры</a></li>
-            <li class="footer-catalog-item"><a href="#" class="footer-menu-link">Электровелосипеды</a></li>
-            <li class="footer-catalog-item"><a href="#" class="footer-menu-link">Электровелосипеды</a></li>
-          </ul>
-        </div>
-        <div class="footer-buyer-wrapper">
-          <h2 class="footer-title">Покупателям</h2>
-          <ul class="footer-buyer">
-            <li class="footer-catalog-item"><a href="#" class="footer-menu-link">Сервисный центр</a></li>
-            <li class="footer-catalog-item"><a href="#" class="footer-menu-link">Доставка и оплата</a></li>
-            <li class="footer-catalog-item"><a href="#" class="footer-menu-link">Рассрочка</a></li>
-            <li class="footer-catalog-item"><a href="#" class="footer-menu-link">Тест-драйв</a></li>
-            <li class="footer-catalog-item"><a href="#" class="footer-menu-link">Блог</a></li>
-            <li class="footer-catalog-item"><a href="#" class="footer-menu-link">Сотрудничество</a></li>
-            <li class="footer-catalog-item"><a href="#" class="footer-menu-link">Контакты</a></li>
-            <li class="footer-catalog-item"><a href="#" class="footer-menu-link">Акции</a></li>
+            <h2 class="footer-title">Каталог товаров</h2>
+            <ul class="footer-catalog">
+              <li class="footer-catalog-item">
+                <a href="#" class="footer-menu-link">Электросамокаты</a>
+              </li>
+              <li class="footer-catalog-item">
+                <a href="#" class="footer-menu-link">Электроскутеры</a>
+              </li>
+              <li class="footer-catalog-item">
+                <a href="#" class="footer-menu-link">Электровелосипеды</a>
+              </li>
+              <li class="footer-catalog-item">
+                <a href="#" class="footer-menu-link">Электровелосипеды</a>
+              </li>
+            </ul>
           </div>
-            <div class="footer-contacts-wrapper">
-              <div class="footer-call-center-wrapper">
-                <h2 class="footer-title">Контакты</h2>
-                <p class="call-center">Call-центр</p>
-                <a href="tel:+78005055461" class="footer-phone">+7 (800) 505-54-61</a>
-                <p class="footer-time">Пн-Вс 10:00 - 20:00</p>
-              </div>
-              <div class="footer-service-center-wrapper">
-                <p class="call-center">Сервисный центр</p>
-                <a href="tel:+74993507692" class="footer-phone">+7 (499) 350-76-92</a>
-                <p class="footer-time">Пн-Вс 10:00 - 20:00</p>
-              </div>
+          <div class="footer-buyer-wrapper">
+            <h2 class="footer-title">Покупателям</h2>
+            <ul class="footer-buyer">
+              <li class="footer-catalog-item">
+                <a href="#" class="footer-menu-link">Сервисный центр</a>
+              </li>
+              <li class="footer-catalog-item">
+                <a href="#" class="footer-menu-link">Доставка и оплата</a>
+              </li>
+              <li class="footer-catalog-item">
+                <a href="#" class="footer-menu-link">Рассрочка</a>
+              </li>
+              <li class="footer-catalog-item">
+                <a href="#" class="footer-menu-link">Тест-драйв</a>
+              </li>
+              <li class="footer-catalog-item">
+                <a href="#" class="footer-menu-link">Блог</a>
+              </li>
+              <li class="footer-catalog-item">
+                <a href="#" class="footer-menu-link">Сотрудничество</a>
+              </li>
+              <li class="footer-catalog-item">
+                <a href="#" class="footer-menu-link">Контакты</a>
+              </li>
+              <li class="footer-catalog-item">
+                <a href="#" class="footer-menu-link">Акции</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contacts-wrapper">
+            <div class="footer-call-center-wrapper">
+              <h2 class="footer-title">Контакты</h2>
+              <p class="call-center">Call-центр</p>
+              <a href="tel:+78005055461" class="footer-phone"
+                >+7 (800) 505-54-61</a
+              >
+              <p class="footer-time">Пн-Вс 10:00 - 20:00</p>
             </div>
-          </ul>
-          <a href="#" class="call" data-toggle="modal" data-target="#feedback-modal">Заказать звонок</a>
+            <div class="footer-service-center-wrapper">
+              <p class="call-center">Сервисный центр</p>
+              <a href="tel:+74993507692" class="footer-phone"
+                >+7 (499) 350-76-92</a
+              >
+              <p class="footer-time">Пн-Вс 10:00 - 20:00</p>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="call"
+            data-toggle="modal"
+            data-target="#feedback-modal"
+            >Заказать звонок</a
+          >
         </div>
-        <hr class="hr"/>
+        <hr class="hr" />
         <div class="footer-midle">
           <a href="./" class="logo footer-logo">KUGOO</a>
           <a href="./" class="logo-center footer-logo-center">KUGOO</a>
           <div class="badge-wrapper">
-            <a class="badge" href="#"><img src="img/svg/google.svg" alt="google"></a>
-            <a class="badge" href="#"><img src="img/svg/app.svg" alt="app"></a>
+            <a class="badge" href="#"
+              ><img src="img/svg/google.svg" alt="google"
+            /></a>
+            <a class="badge" href="#"
+              ><img src="img/svg/app.svg" alt="app"
+            /></a>
           </div>
-        <div class="social-wrapper">
-          <button type="submit" class="button-social">
-            <div class="social">
-            <img src="img/svg/vk.svg" alt="vk" class="social-image">
-            <span class="social-name">Вконтакте</span>
-            <span class="social-users">3 300</span>
+          <div class="social-wrapper">
+            <a href="#" class="button-social">
+              <div class="social">
+                <img src="img/svg/vk.svg" alt="vk" class="social-image" />
+                <span class="social-name">Вконтакте</span>
+                <span class="social-users">3 300</span>
+              </div>
+            </a>
+            <a href="#" class="button-social">
+              <div class="social">
+                <img src="img/svg/yt.svg" alt="yt" class="social-image" />
+                <span class="social-name">YouTube</span>
+                <span class="social-users">3 603</span>
+              </div>
+            </a>
+            <a href="#" class="button-social">
+              <div class="social">
+                <img src="img/svg/tg.svg" alt="tg" class="social-image" />
+                <span class="social-name">Telegram</span>
+                <span class="social-users">432</span>
+              </div>
+            </a>
           </div>
-          </button>
-          <button type="submit" class="button-social">
-            <div class="social">
-            <img src="img/svg/yt.svg" alt="yt" class="social-image">
-            <span class="social-name">YouTube</span>
-            <span class="social-users">3 603</span>
-          </div>
-          </button>
-          <button type="submit" class="button-social">
-            <div class="social">
-            <img src="img/svg/tg.svg" alt="tg" class="social-image">
-            <span class="social-name">Telegram</span>
-            <span class="social-users">432</span>
-            </div>
-          </button>
         </div>
-        </div>
-        <hr class="hr hr-footer">
+        <hr class="hr hr-footer" />
         <div class="footer-bottom">
           <div class="footer-bottom-info">
             <a href="#" class="footer-bottom-link">Реквизиты</a>
-            <a href="#" class="footer-bottom-link">Политика конфиденциальности</a>
+            <a href="#" class="footer-bottom-link"
+              >Политика конфиденциальности</a
+            >
           </div>
           <div class="footer-bottom-card">
-            <a href="" class="footer-bottom-card-item"><img src="img/svg/gpay.svg" alt="gpay"></a>
-            <a href="" class="footer-bottom-card-item"><img src="img/svg/apay.svg" alt="apay"></a>
-            <a href="" class="footer-bottom-card-item"><img src="img/svg/visa.svg" alt="visa"></a>
-            <a href="" class="footer-bottom-card-item"><img src="img/svg/mastercard.svg" alt="mastercard"></a>
-            <a href="" class="footer-bottom-card-item"><img src="img/svg/jvc.svg" alt="jvc"></a>
-            <a href="" class="footer-bottom-card-item"><img src="img/svg/wm.svg" alt="wm"></a>
-            <a href="" class="footer-bottom-card-item"><img src="img/svg/qiwi.svg" alt="qiwi"></a>
+            <a href="" class="footer-bottom-card-item"
+              ><img src="img/svg/gpay.svg" alt="gpay"
+            /></a>
+            <a href="" class="footer-bottom-card-item"
+              ><img src="img/svg/apay.svg" alt="apay"
+            /></a>
+            <a href="" class="footer-bottom-card-item"
+              ><img src="img/svg/visa.svg" alt="visa"
+            /></a>
+            <a href="" class="footer-bottom-card-item"
+              ><img src="img/svg/mastercard.svg" alt="mastercard"
+            /></a>
+            <a href="" class="footer-bottom-card-item"
+              ><img src="img/svg/jvc.svg" alt="jvc"
+            /></a>
+            <a href="" class="footer-bottom-card-item"
+              ><img src="img/svg/wm.svg" alt="wm"
+            /></a>
+            <a href="" class="footer-bottom-card-item"
+              ><img src="img/svg/qiwi.svg" alt="qiwi"
+            /></a>
           </div>
           <div class="online-chat">
             <p class="ohline-chat-text">Online чат:</p>
             <div class="online-chat-icon">
-              <a href="" class="online-chat-item"><img width="16" height="16" src="img/svg/viber.svg" alt="viber"></a>
-              <a href="" class="online-chat-item"><img width="16" height="16" src="img/svg/whatsapp.svg" alt="whatsapp"></a>
-              <a href="" class="online-chat-item"><img width="16" height="16" src="img/svg/telegram.svg" alt="tg"></a>
+              <a href="" class="online-chat-item"
+                ><img
+                  width="16"
+                  height="16"
+                  src="img/svg/viber.svg"
+                  alt="viber"
+              /></a>
+              <a href="" class="online-chat-item"
+                ><img
+                  width="16"
+                  height="16"
+                  src="img/svg/whatsapp.svg"
+                  alt="whatsapp"
+              /></a>
+              <a href="" class="online-chat-item"
+                ><img
+                  width="16"
+                  height="16"
+                  src="img/svg/telegram.svg"
+                  alt="tg"
+              /></a>
             </div>
           </div>
         </div>
       </div>
     </footer>
 
-
     <div class="modal" id="feedback-modal">
       <div class="modal-dialog">
         <div class="modal-dialog-wrapper">
           <div class="modal-dialog-content">
-        <h2 class="modal-title">Запишитесь натест-драйв электросамоката</h2>
-        <p class="modal-text-top">и подберите модель для себя</p>
-        <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
-          <img width="20" height="20" src="img/svg/modal-close.svg" alt="modal-close" class="modal-close-icon">
-        </a>
-        <p class="modal-text">
-          Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.
-        </p>
-        <p class="modal-text-bottom">Как с вами удобнее связаться?</p>
-        <form action="handler.php" method="POST" class="modal-form form-glob">
-          <div class="input-group-wrapper input-group-vertical">
-            <div class="input-group modal-input-group">
-              <input
-                id="modal-user-phone"
-                type="tel"
-                class="input modal-input phone-mask"
-                name="userphone"
-                placeholder="+7 (___) __ - __ - __"
-                maxlength="30"
-                required
+            <h2 class="modal-title">Запишитесь натест-драйв электросамоката</h2>
+            <p class="modal-text-top">и подберите модель для себя</p>
+            <a
+              href="#"
+              class="modal-close"
+              data-toggle="modal"
+              data-target="#feedback-modal"
+            >
+              <img
+                width="20"
+                height="20"
+                src="img/svg/modal-close.svg"
+                alt="modal-close"
+                class="modal-close-icon"
               />
-            </div>
+            </a>
+            <p class="modal-text">
+              Менеджер свяжется с вами в течение 5 минут, чтобы согласовать
+              время.
+            </p>
+            <p class="modal-text-bottom">Как с вами удобнее связаться?</p>
+            <form
+              action="handler.php"
+              method="POST"
+              class="modal-form form-glob"
+            >
+              <div class="input-group-wrapper input-group-vertical">
+                <div class="input-group modal-input-group">
+                  <input
+                    id="modal-user-phone"
+                    type="tel"
+                    class="input modal-input phone-mask"
+                    name="userphone"
+                    placeholder="+7 (___) __ - __ - __"
+                    maxlength="30"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="modal-form-footer">
+                <button type="submit" class="button modal-form-button">
+                  Оформить предзаказ
+                </button>
+                <div class="notify modal-notify">
+                  <input
+                    name="agree"
+                    class="checkbox-pointer checkbox-pointer-modal"
+                    type="checkbox"
+                    id="agree-modal"
+                  />
+                  <label class="modal-checkbox" for="agree-modal"> </label>
+                  <p class="modal-checkbox-text">
+                    Нажимая на кнопку, вы соглашаетесь на обработку персональных
+                    данных и
+                    <a href="#" class="modal-policy"
+                      >политикой конфиденциальности</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </form>
           </div>
-          <div class="modal-form-footer">
-            <button type="submit" class="button modal-form-button">
-              Оформить предзаказ
-            </button>
-            <div class="notify modal-notify">
-            <input name="agree" class="checkbox-pointer checkbox-pointer-modal" type="checkbox" id="agree-modal">
-                <label class="modal-checkbox" for="agree-modal">
-                <p class="modal-checkbox-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="modal-policy">политикой конфиденциальности</a></p>
-                </label>
-          </div>
-          </div> 
-        </form>
+          <img
+            class="modal-image"
+            src="img/modal-image.jpg"
+            alt="modal-image"
+          />
+        </div>
       </div>
-        <img class="modal-image" src="img/modal-image.jpg" alt="modal-image">
-      </div>
-      </div>
-    </div>
     </div>
     <div class="modal" id="alert-modal">
       <div class="modal-dialog">
-        <a href="#" class="modal-close" data-toggle="modal" data-target="#alert-modal">
-        <img width="20" height="20" src="img/svg/modal-close.svg" alt="modal-close" class="modal-close-icon">
+        <a
+          href="#"
+          class="modal-close"
+          data-toggle="modal"
+          data-target="#alert-modal"
+        >
+          <img
+            width="20"
+            height="20"
+            src="img/svg/modal-close.svg"
+            alt="modal-close"
+            class="modal-close-icon"
+          />
         </a>
         <h2 class="modal-title">Спасибо за заявку!</h2>
         <p class="modal-text">
-        Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!
+          Наш менеджер свяжется с Вами в ближайшее время ответит на все
+          интересующие вопросы и поможем даже в самых сложных случаях!
         </p>
-        <button type="submit" class="button modal-form-button" data-toggle="modal-close">
-        Вернуться на главную
-            </button>
+        <button
+          type="submit"
+          class="button modal-form-button"
+          data-toggle="modal-close"
+        >
+          Вернуться на главную
+        </button>
       </div>
     </div>
     <script src="js/just-validate.production.min.js"></script>
