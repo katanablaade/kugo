@@ -976,8 +976,7 @@
   background-position: center center;
 }
 .checkbox-pointer:checked + label::before {
-  content: "";
-  background-image: url("/img/svg/check.png");
+  background-image: url("./img/svg/check.svg");
 }
 .checkbox-pointer-modal + label::before {
   content: "";
@@ -993,7 +992,7 @@
   background-position: center center;
 }
 .checkbox-pointer-modal:checked + label::before {
-  background-image: url("/img/svg/check.svg");
+  background-image: url("./img/svg/check.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
