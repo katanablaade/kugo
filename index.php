@@ -535,7 +535,7 @@
           <form action="handler.php" method="POST" class="request-form form-glob">
             <h2 class="title request-form-title">Нет нужной модели, которую хотите протестировать?</h2>
             <p class="request-form-text">
-              Оставьте заявку, и менеджер подберет нужный самокат
+            Оставьте заявку, и менеджер подберет нужный самокат
             </p>
             <div class="input-group-wrapper">
               <div class="input-group">
@@ -548,15 +548,14 @@
                 />
                 <button type="submit" class="button button-request">Оставить заявку на тест-драйв</button>
               </div>
-            </div>
-            <div class="checkbox-wrapper">
-            <input name="agree" class="checkbox-pointer" type="checkbox" id="agree">
+              </div>
+              <div class="checkbox-wrapper">
+                <input name="agree" class="checkbox-pointer" type="checkbox" id="agree">
                 <label for="agree">
                 </label>
                 <p class="checkbox-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="policy">политикой конфиденциальности</a></p>
-              </div>
+            </div>
           </form>
-        </div>
         </div>
       </div>
     </section>
@@ -606,15 +605,15 @@
             <div class="footer-contacts-wrapper">
               <div class="footer-call-center-wrapper">
                 <h2 class="footer-title">Контакты</h2>
-              <p class="call-center">Call-центр</p>
-              <a href="tel:+78005055461" class="footer-phone">+7 (800) 505-54-61</a>
-              <p class="footer-time">Пн-Вс 10:00 - 20:00</p>
-            </div>
-            <div class="footer-service-center-wrapper">
-              <p class="call-center">Сервисный центр</p>
-              <a href="tel:+74993507692" class="footer-phone">+7 (499) 350-76-92</a>
-              <p class="footer-time">Пн-Вс 10:00 - 20:00</p>
-            </div>
+                <p class="call-center">Call-центр</p>
+                <a href="tel:+78005055461" class="footer-phone">+7 (800) 505-54-61</a>
+                <p class="footer-time">Пн-Вс 10:00 - 20:00</p>
+              </div>
+              <div class="footer-service-center-wrapper">
+                <p class="call-center">Сервисный центр</p>
+                <a href="tel:+74993507692" class="footer-phone">+7 (499) 350-76-92</a>
+                <p class="footer-time">Пн-Вс 10:00 - 20:00</p>
+              </div>
             </div>
           </ul>
           <a href="#" class="call" data-toggle="modal" data-target="#feedback-modal">Заказать звонок</a>
