@@ -9,7 +9,7 @@ const swiper = new Swiper(".models-swiper", {
   },
   breakpoints: {
     // when window width is >= 320px
-    576: {
+    320: {
       slidesPerView: 1,
     },
     // when window width is >= 480px

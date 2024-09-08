@@ -168,7 +168,7 @@
         <div class="test-drive-wrapper">
           <div class="test-drive-content-top">
             <h2 class="title test-drive-title-top">
-              Определите максимально подходящую вам модель не теоретически, а на
+              Определите максимально подходящую вам модель <br class="br">не теоретически, а на
               практике
             </h2>
             <p class="test-drive-text">Тест-драйв поможет:</p>
@@ -233,7 +233,7 @@
           />
           <div class="test-drive-content-bottom">
             <h2 class="title test-drive-title-bottom">
-              Научим правильной и безопасной езде в городе вас или вашего
+              Научим правильной <br class="br">и безопасной езде в городе <br class="br">вас или вашего
               ребенка
             </h2>
             <p class="test-drive-text">На обучении специалист расскажет:</p>
