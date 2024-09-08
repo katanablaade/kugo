@@ -976,6 +976,7 @@
   background-position: center center;
 }
 .checkbox-pointer:checked + label::before {
+  content: "";
   background-image: url("/img/svg/check.png");
 }
 .checkbox-pointer-modal + label::before {
