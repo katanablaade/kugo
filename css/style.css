@@ -34,6 +34,10 @@
   font-weight: 400;
   line-height: 17px;
   text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-link-item:hover {
+  color: rgb(111, 115, 238);
 }
 .nav-icon {
   display: flex;
@@ -94,6 +98,11 @@
   padding: 0;
   margin: 0;
   cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+.button:hover {
+  background-color: rgb(134, 137, 236);
+  border: 1px solid rgb(134, 137, 236);
 }
 
 .button-menu {
@@ -129,13 +138,12 @@
   line-height: 1.25rem;
   margin-top: 0.125rem;
 }
-.search button {
+.button-search {
   position: absolute;
   top: 2px;
   right: 0px;
   width: 2.5rem;
   height: 2.5rem;
-  border: none;
   background: rgb(111, 115, 238);
   border-radius: 0 5px 5px 0;
   cursor: pointer;
@@ -269,6 +277,10 @@
   border-radius: 5px;
   background: rgb(255, 255, 255);
   margin-bottom: 3.5rem;
+  transition: opacity 0.2s;
+}
+.button-light:hover {
+  opacity: 0.9;
 }
 .test-drive {
   margin-bottom: 6.25rem;
@@ -531,6 +543,9 @@
   width: 263px;
   margin-right: 1.0625rem;
 }
+.footer-input:focus {
+  outline: 1px solid #000;
+}
 .input-mail {
   border: 1px solid rgb(234, 235, 237);
   border-radius: 5px;
@@ -605,12 +620,20 @@
 }
 .button-form-footer {
   background: rgb(255, 255, 255);
+  border: 1.5px solid rgb(111, 115, 238);
   padding: 0.9375rem 1.5625rem;
   color: rgb(111, 115, 238);
   font-family: "Jost";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.4375rem;
+  border-radius: 0.3125rem;
+  margin: 0;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.button-form-footer:hover {
+  opacity: 0.9;
 }
 .footer-input {
   background: rgba(255, 255, 255, 0.2);
@@ -658,6 +681,7 @@
 .footer-catalog-item {
   margin-bottom: 0.625rem;
   list-style: none;
+  position: relative;
 }
 .footer-menu-link {
   color: rgb(93, 108, 123);
@@ -666,7 +690,12 @@
   font-weight: 400;
   line-height: 1.25rem;
   text-decoration: none;
+  transition: color 0.2s;
 }
+.footer-menu-link:hover {
+  color: rgb(111, 115, 238);
+}
+
 .footer-catalog-wrapper {
   margin-right: 7.8125rem;
 }
@@ -686,6 +715,9 @@
   margin: 0;
   margin-bottom: 0.3125rem;
 }
+.footer-call-center-wrapper {
+  position: relative;
+}
 .footer-phone {
   color: rgb(40, 39, 57);
   font-family: "Jost";
@@ -694,6 +726,22 @@
   line-height: 1.4375rem;
   text-decoration: none;
   margin-bottom: 0.625rem;
+}
+.footer-phone::after {
+  content: "";
+  width: 0;
+  position: absolute;
+  bottom: 20px;
+  background-color: rgb(92, 142, 230);
+  height: 2px;
+  transition: width 0.2s;
+  right: 0;
+  left: auto;
+}
+.footer-phone:hover::after {
+  width: 100%;
+  right: auto;
+  left: 0;
 }
 .footer-time {
   color: rgb(93, 108, 123);
@@ -708,6 +756,7 @@
   margin-top: 2.8125rem;
   margin-left: 2.5rem;
   margin-right: 4.75rem;
+  position: relative;
 }
 .call {
   color: rgb(111, 115, 238);
@@ -1271,7 +1320,27 @@
   .modal-input {
     margin-right: 50px;
   }
+  .nav-link-item:hover {
+    color: rgb(93, 108, 123);
+  }
+  .button-light:hover {
+    opacity: 1;
+  }
+  .button-form-footer:hover {
+    opacity: 1;
+  }
+  .footer-menu-link:hover {
+    color: rgb(93, 108, 123);
+  }
+  .footer-phone:hover::after {
+    width: 0;
+  }
+  .button:hover {
+    background: rgb(111, 115, 238);
+    border: 1px solid rgb(111, 115, 238);
+  }
 }
+
 @media (max-width: 768px) {
   .container-small {
     max-width: 35.375rem;

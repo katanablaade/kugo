@@ -80,7 +80,7 @@
             <div class="search">
               <form class="search-form">
                 <input type="text" placeholder="Искать самокат KUGO" />
-                <button class="button" type="submit">
+                <button class="button button-search" type="submit">
                   <img
                     src="img/svg/search.svg"
                     alt="search"
@@ -635,7 +635,7 @@
                 class="input-mail footer-input"
                 placeholder="Введите Ваш email"
               />
-              <button type="submit" class="button button-form-footer">
+              <button type="submit" class="button-form-footer">
                 Подписаться
               </button>
             </div>
